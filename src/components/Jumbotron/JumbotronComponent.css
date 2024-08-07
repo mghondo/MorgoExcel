@@ -1,0 +1,30 @@
+.jumbotron-custom {
+    width: 100%;
+    min-height: 300px;
+    padding: 100px 0;
+    margin: 0;
+    background-color: #a8cfa3fc;
+    color: rgb(5, 21, 5);
+
+  }
+  
+  .jumbotron-custom .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  }
+  
+  /* Remove any default jumbotron margins */
+  .jumbotron {
+    margin-bottom: 0;
+  }
+
+  .jumbotron-custom .container-fluid {
+    text-align: center;
+  }
+
+  .jumbotron {
+    margin-bottom: 40px;
+  }
+  
+  

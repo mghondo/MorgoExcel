@@ -1,0 +1,12 @@
+
+/* #2b3824 */
+
+.bg-dark {
+    background-color: #3a4534 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-link {
+    color: rgb(255 255 255 / 98%);
+}
