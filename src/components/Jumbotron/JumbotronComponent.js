@@ -6,30 +6,26 @@ const JumbotronComponent = () => {
   const [showZach, setShowZach] = useState(false);
 
   useEffect(() => {
-    // Show the "except for Zach" part after 3 seconds
-    const timer = setTimeout(() => {
-      setShowZach(true);
-    }, 3000);
-
-    // Hide the "except for Zach" part at 12 AM on August 12
     const now = new Date();
-    const targetDate = new Date(now.getFullYear(), 7, 12); // August is month 7 (0-based index)
+    const targetDate = new Date(now.getFullYear(), 8, 21); // August is month 7 (0-based index)
     targetDate.setHours(0, 0, 0, 0); // Set to 12 AM
 
-    const timeUntilTarget = targetDate - now;
-    if (timeUntilTarget > 0) {
+    if (now < targetDate) {
+      // Only show "except for Zach" if current date is before target date
+      const timer = setTimeout(() => {
+        setShowZach(true);
+      }, 3000);
+
+      const timeUntilTarget = targetDate - now;
       const hideTimer = setTimeout(() => {
         setShowZach(false);
       }, timeUntilTarget);
 
       return () => {
+        clearTimeout(timer);
         clearTimeout(hideTimer);
       };
     }
-
-    return () => {
-      clearTimeout(timer);
-    };
   }, []);
 
   return (
