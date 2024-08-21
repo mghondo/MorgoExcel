@@ -32,7 +32,10 @@ const JumbotronComponent = () => {
     <div className="jumbotron jumbotron-fluid jumbotron-custom">
       <div className="container-fluid text-center">
         <h1 className="display-4">Morgo Excel</h1>
-        <h4>Making the day faster.{showZach && ".....except for Zach!!"}</h4>
+        <h4>
+          Making the day faster.
+          {/* {showZach && ".....except for Zach!!"} */}
+        </h4>
       </div>
     </div>
   );
