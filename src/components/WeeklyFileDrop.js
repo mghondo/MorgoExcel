@@ -26,7 +26,7 @@ const WeeklyFileDrop = () => {
     console.log("Uploading weekly file:", acceptedFiles[0].name);
 
     axios
-      .post("http://127.0.0.1:5000/upload/weekly", formData, {
+      .post("https://api.morgotools.com/upload/weekly", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -34,7 +34,7 @@ const WeeklyFileDrop = () => {
       .then((response) => {
         console.log("Response from server:", response.data);
         const filename = response.data.filename;
-        const downloadUrl = `http://127.0.0.1:5000/download/weekly/${filename}`;
+        const downloadUrl = `https://api.morgotools.com/download/weekly/${filename}`;
         setDownloadLink(downloadUrl);
         console.log("Download link set:", downloadUrl);
       })
