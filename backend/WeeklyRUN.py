@@ -112,9 +112,6 @@ def process_weekly_csv():
             else:
                 cell.alignment = Alignment(horizontal='center', vertical='center')
 
-    # Get the company name from the first row of the 'Vendor' column
-    company_name = df['Vendor'].iloc[0] if not df.empty else "Unknown Company"
-
     # Set the orientation to landscape
     ws.page_setup.orientation = ws.ORIENTATION_LANDSCAPE
 
@@ -124,7 +121,7 @@ def process_weekly_csv():
     # Add custom header and footer
     current_date = date.today().strftime("%m/%d/%Y")
     ws.oddHeader.left.text = "Discrepancies: _________________"
-    ws.oddHeader.center.text = f"{company_name} Physical Count {current_date}"
+    ws.oddHeader.center.text = f"Physical Count {current_date}"
     ws.oddHeader.right.text = "Name + Badge: ___________________"
     ws.oddFooter.center.text = "&P"  # Page number
 
@@ -133,7 +130,7 @@ def process_weekly_csv():
     ws.page_setup.fitToHeight = 0  # 0 means it will use as many pages as needed vertically
 
     # Save the workbook
-    output_file = os.path.join(WEEKLYCOMPLETE_DIR, f'{company_name}_{os.path.splitext(file_name)[0]}.xlsx')
+    output_file = os.path.join(WEEKLYCOMPLETE_DIR, 'WeeklyCount_' + os.path.splitext(file_name)[0] + '.xlsx')
     wb.save(output_file)
 
     print(f"Weekly Count Excel file has been saved to {output_file}")

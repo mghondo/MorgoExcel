@@ -38,7 +38,7 @@ def process_excel(input_path):
         # Delete the 6th column
         sheet.delete_cols(6)
 
-        # Collect rows and identify rows to keep
+        # Collect rows and identify rows to delete
         rows_to_keep = []
         for row in sheet.iter_rows(min_row=1, values_only=False):  # Start from the first row
             if row[4].value != "Gear":  # 5th column is at index 4 (0-based index)
@@ -73,7 +73,7 @@ def process_excel(input_path):
         for row in sorted_data_rows:
             new_sheet.append([cell.value for cell in row])
 
-        # Rename the columns
+        # Rename the 4th column to "Last 4 #s"
         new_sheet.cell(row=1, column=4, value="Last 4 #s")
         new_sheet.cell(row=1, column=2, value="Product Name")
         new_sheet.cell(row=1, column=8, value="Fulfillment")
@@ -112,9 +112,6 @@ def process_excel(input_path):
 
         # Ensure the sheet is set to print gridlines
         new_sheet.print_gridlines = True
-
-        # Delete column E as the last operation
-        new_sheet.delete_cols(5)
 
         # Save the modified workbook
         new_workbook.save(output_path)
