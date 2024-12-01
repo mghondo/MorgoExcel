@@ -1,30 +1,28 @@
 .jumbotron-custom {
-    width: 100%;
-    min-height: 300px;
-    padding: 100px 0;
-    margin: 0;
-    background-color: #a8cfa3fc;
-    color: rgb(5, 21, 5);
+  width: 100%;
+  min-height: 300px;
+  padding: 100px 0;
+  margin: 0;
+  background-image: url('IMG_9541.png');
+  background-size: cover;
+  background-position: center top 45%; /* Positions the image 25% from the top */
+  color: rgb(5, 21, 5);
+}
 
-  }
-  
-  .jumbotron-custom .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
-    
-  }
-  
-  /* Remove any default jumbotron margins */
-  .jumbotron {
-    margin-bottom: 0;
-  }
+.jumbotron-custom .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  .jumbotron-custom .container-fluid {
-    text-align: center;
-  }
+/* Remove any default jumbotron margins */
+.jumbotron {
+  margin-bottom: 0;
+}
 
-  .jumbotron {
-    margin-bottom: 40px;
-  }
-  
-  
+.jumbotron-custom .container-fluid {
+  text-align: center;
+}
+
+.jumbotron {
+  margin-bottom: 40px;
+}
