@@ -17,7 +17,7 @@ const FileDrop = ({ colId }) => {
     console.log("Uploading file:", acceptedFiles[0].name);
 
     axios
-      .post("https://api.morgotools.com/upload/morning", formData, {
+      .post("http://127.0.0.1:5000/upload/morning", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -25,7 +25,7 @@ const FileDrop = ({ colId }) => {
       .then((response) => {
         console.log("Response from server:", response.data);
         const filename = response.data.filename;
-        const downloadUrl = `https://api.morgotools.com/download/morning/${filename}`;
+        const downloadUrl = `http://127.0.0.1:5000/download/morning/${filename}`;
         setDownloadLink(downloadUrl);
         console.log("Download link set:", downloadUrl);
       })
@@ -43,6 +43,16 @@ const FileDrop = ({ colId }) => {
   return (
     <div className={`col-lg-6 ${colId}`}>
       <h2 className="text-center">Morning Count File Drop</h2>
+      <div className="text-center mt-3">
+    <button 
+      type="button" 
+      className="btn btn-info" 
+      style={{ backgroundColor: '#3d6428', color: 'white', borderColor: '#3a4534' }}
+      onClick={() => window.open('https://youtu.be/lFuMdu2-vlo', '_blank')}
+    >
+      Instructional Video
+    </button>
+  </div>
       <div className="card mt-3" style={{ margin: "30px" }}>
         <div className="card-body">
           <div {...getRootProps({ className: "dropzone" })}>
