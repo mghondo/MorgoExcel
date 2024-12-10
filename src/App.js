@@ -11,9 +11,11 @@ const App = () => {
     <div className="container-fluid p-0">
       <NavBar /> {/* Changed this line */}
       <JumbotronComponent />
-      <div className="row">
-        <FileDrop colId="col1" />
-        <WeeklyFileDrop />
+      <div className="container-fluid">
+        <div className="row">
+          <FileDrop colId="col1" />
+          <WeeklyFileDrop />
+        </div>
       </div>
     </div>
   );
