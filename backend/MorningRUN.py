@@ -23,7 +23,7 @@ def process_excel(input_path):
         sheet = workbook.active
 
         # Delete the first four rows
-        sheet.delete_rows(1, 4)
+        # sheet.delete_rows(1, 4)
 
         # Delete columns I and J (9th and 10th columns)
         sheet.delete_cols(9, 2)
