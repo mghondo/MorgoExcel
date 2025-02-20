@@ -34,8 +34,7 @@ def upload_morning_file():
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename))
         input_path = os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename)
-        process_excel(input_path)
-        output_filename = f"{datetime.now().strftime('%m.%d.%Y')}.MorningCount.xlsx"
+        output_filename = process_excel(input_path)
         return jsonify({'filename': output_filename}), 200
 
 @app.route('/upload/weekly', methods=['POST'])
@@ -50,7 +49,7 @@ def upload_weekly_file():
         file_path = os.path.join(app.config['WEEKLY_UPLOAD_FOLDER'], filename)
         file.save(file_path)
         try:
-            output_file = process_weekly_csv()  # Call the function from WeeklyRUN.py
+            output_file = process_weekly_csv()
             output_filename = os.path.basename(output_file)
             return jsonify({'filename': output_filename}), 200
         except Exception as e:
@@ -72,5 +71,3 @@ if __name__ == '__main__':
     os.makedirs(WEEKLY_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
     app.run(debug=True, host='0.0.0.0', port=5000)
-
-print("Hello!!")
