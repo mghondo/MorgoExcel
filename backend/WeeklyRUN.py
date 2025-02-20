@@ -81,14 +81,14 @@ def process_weekly_csv():
     # Add new columns
     df['Exp Date Conf.'] = ''  # Column G
     df['Fulfillment'] = ''     # Column H
-    df['Vault'] = ''           # Column I
+    df['Vaults'] = ''           # Column I
     df['Sold'] = ''            # Column J
     df['Total'] = ''           # Column K
     df['✓'] = ''               # Column L with checkmark symbol
 
     # Reorder columns
     new_order = ['Vendor', 'Product', 'Package ID', 'Room', 'Available', 'Expiration date',
-                 'Exp Date Conf.', 'Fulfillment', 'Vault', 'Sold', 'Total', '✓']
+                 'Exp Date Conf.', 'Fulfillment', 'Vaults', 'Sold', 'Total', '✓']
     df = df[new_order]
 
     # Create a new workbook and select the active sheet
