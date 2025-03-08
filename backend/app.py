@@ -1,45 +1,40 @@
-import os
-import shutil
 from flask import Flask, request, jsonify, send_from_directory
-from flask_cors import CORS
 from werkzeug.utils import secure_filename
-from datetime import datetime
-from MorningRUN import process_excel
-from WeeklyRUN import process_weekly_csv
+import os
+from metric import process_metric_file
+from dutchie import process_dutchie_file, clear_output_directory
+import datetime
+from flask_cors import CORS
+import MorningRUN
+import WeeklyRUN
 
 app = Flask(__name__)
 CORS(app)
 
+# File upload configurations
+UPLOAD_FOLDER = 'uploads'
 MORNING_UPLOAD_FOLDER = 'MORNINGDROP'
-MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_UPLOAD_FOLDER = 'WEEKLYDROP'
+METRIC_UPLOAD_FOLDER = 'METRIC-IN'
+DUTCHIE_UPLOAD_FOLDER = 'DUTCHIE-IN'
+MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_COMPLETE_FOLDER = 'WEEKLYCOMPLETE'
-ALLOWED_EXTENSIONS = {'xlsx', 'csv'}
+METRIC_COMPLETE_FOLDER = 'METRIC-OUT'
+DUTCHIE_COMPLETE_FOLDER = 'DUTCHIE-OUT'
+ALLOWED_EXTENSIONS = {'csv', 'xlsx'}
 
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MORNING_UPLOAD_FOLDER'] = MORNING_UPLOAD_FOLDER
-app.config['MORNING_COMPLETE_FOLDER'] = MORNING_COMPLETE_FOLDER
 app.config['WEEKLY_UPLOAD_FOLDER'] = WEEKLY_UPLOAD_FOLDER
+app.config['METRIC_UPLOAD_FOLDER'] = METRIC_UPLOAD_FOLDER
+app.config['DUTCHIE_UPLOAD_FOLDER'] = DUTCHIE_UPLOAD_FOLDER
+app.config['MORNING_COMPLETE_FOLDER'] = MORNING_COMPLETE_FOLDER
 app.config['WEEKLY_COMPLETE_FOLDER'] = WEEKLY_COMPLETE_FOLDER
+app.config['METRIC_COMPLETE_FOLDER'] = METRIC_COMPLETE_FOLDER
+app.config['DUTCHIE_COMPLETE_FOLDER'] = DUTCHIE_COMPLETE_FOLDER
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-# def clear_folders():
-#     folders = [MORNING_UPLOAD_FOLDER, MORNING_COMPLETE_FOLDER, WEEKLY_UPLOAD_FOLDER, WEEKLY_COMPLETE_FOLDER]
-#     for folder in folders:
-#         if os.path.exists(folder):
-#             for filename in os.listdir(folder):
-#                 file_path = os.path.join(folder, filename)
-#                 try:
-#                     if os.path.isfile(file_path) or os.path.islink(file_path):
-#                         os.unlink(file_path)
-#                         print(f"Deleted file: {file_path}")
-#                     elif os.path.isdir(file_path):
-#                         shutil.rmtree(file_path)
-#                         print(f"Deleted directory: {file_path}")
-#                 except Exception as e:
-#                     print(f'Failed to delete {file_path}. Reason: {e}')
-#     print("All folders cleared successfully.")
 
 @app.route('/upload/morning', methods=['POST'])
 def upload_morning_file():
@@ -50,11 +45,13 @@ def upload_morning_file():
         return jsonify({'error': 'No selected file'}), 400
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
-        file.save(os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename))
-        input_path = os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename)
-        output_filename = process_excel(input_path)
-        print(f"Morning file processed: {output_filename}")
-        return jsonify({'filename': output_filename}), 200
+        file_path = os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename)
+        file.save(file_path)
+        try:
+            processed_filename = MorningRUN.process_morning_file(file_path)
+            return jsonify({'filename': processed_filename}), 200
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
 
 @app.route('/upload/weekly', methods=['POST'])
 def upload_weekly_file():
@@ -68,12 +65,49 @@ def upload_weekly_file():
         file_path = os.path.join(app.config['WEEKLY_UPLOAD_FOLDER'], filename)
         file.save(file_path)
         try:
-            output_file = process_weekly_csv()
-            output_filename = os.path.basename(output_file)
-            print(f"Weekly file processed: {output_filename}")
+            processed_filename = WeeklyRUN.process_weekly_file(file_path)
+            return jsonify({'filename': processed_filename}), 200
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+
+@app.route('/upload/metric', methods=['POST'])
+def upload_metric_file():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part'}), 400
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'}), 400
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        input_path = os.path.join(app.config['METRIC_UPLOAD_FOLDER'], filename)
+        file.save(input_path)
+        try:
+            output_filename = f'METRIC-{filename[:-4]}.xlsx'
+            output_path = os.path.join(app.config['METRIC_COMPLETE_FOLDER'], output_filename)
+            process_metric_file(input_path, output_path)
             return jsonify({'filename': output_filename}), 200
         except Exception as e:
-            print(f"Error processing weekly file: {str(e)}")
+            return jsonify({'error': str(e)}), 500
+
+@app.route('/upload/dutchie', methods=['POST'])
+def upload_dutchie_file():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part'}), 400
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'}), 400
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        input_path = os.path.join(app.config['DUTCHIE_UPLOAD_FOLDER'], filename)
+        file.save(input_path)
+        try:
+            clear_output_directory(app.config['DUTCHIE_COMPLETE_FOLDER'])
+            current_date = datetime.date.today().strftime("%Y-%m-%d")
+            output_filename = f'DUTCHIE-{current_date}.xlsx'
+            output_path = os.path.join(app.config['DUTCHIE_COMPLETE_FOLDER'], output_filename)
+            process_dutchie_file(input_path, output_path)
+            return jsonify({'filename': output_filename}), 200
+        except Exception as e:
             return jsonify({'error': str(e)}), 500
 
 @app.route('/download/<folder>/<filename>', methods=['GET'])
@@ -82,17 +116,21 @@ def download_file(folder, filename):
         return send_from_directory(app.config['MORNING_COMPLETE_FOLDER'], filename)
     elif folder == 'weekly':
         return send_from_directory(app.config['WEEKLY_COMPLETE_FOLDER'], filename)
+    elif folder == 'metric':
+        return send_from_directory(app.config['METRIC_COMPLETE_FOLDER'], filename)
+    elif folder == 'dutchie':
+        return send_from_directory(app.config['DUTCHIE_COMPLETE_FOLDER'], filename)
     else:
         return jsonify({'error': 'Invalid folder'}), 400
 
-
-
 if __name__ == '__main__':
-    print("Starting Flask application...")
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(MORNING_UPLOAD_FOLDER, exist_ok=True)
-    os.makedirs(MORNING_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(METRIC_UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(DUTCHIE_UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(MORNING_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
-    # clear_folders()
-    print("Folders created and cleared. Starting server...")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    os.makedirs(METRIC_COMPLETE_FOLDER, exist_ok=True)
+    os.makedirs(DUTCHIE_COMPLETE_FOLDER, exist_ok=True)
+    app.run(debug=True)

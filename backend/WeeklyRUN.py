@@ -9,48 +9,32 @@ from datetime import date
 WEEKLYDROP_DIR = 'WEEKLYDROP'
 WEEKLYCOMPLETE_DIR = 'WEEKLYCOMPLETE'
 
-def process_weekly_csv():
-    # Ensure WEEKLYDROP directory exists and is accessible
-    if not os.path.exists(WEEKLYDROP_DIR):
-        raise Exception(f"The WEEKLYDROP directory '{WEEKLYDROP_DIR}' does not exist.")
-    if not os.path.isdir(WEEKLYDROP_DIR):
-        raise Exception(f"'{WEEKLYDROP_DIR}' is not a directory.")
-
+def process_weekly_file(file_path):
     # Ensure WEEKLYCOMPLETE directory exists
     if not os.path.exists(WEEKLYCOMPLETE_DIR):
         os.makedirs(WEEKLYCOMPLETE_DIR)
 
     # Delete existing files in WEEKLYCOMPLETE directory
     for file in os.listdir(WEEKLYCOMPLETE_DIR):
-        file_path = os.path.join(WEEKLYCOMPLETE_DIR, file)
+        file_path_to_delete = os.path.join(WEEKLYCOMPLETE_DIR, file)
         try:
-            if os.path.isfile(file_path):
-                os.unlink(file_path)
+            if os.path.isfile(file_path_to_delete):
+                os.unlink(file_path_to_delete)
         except Exception as e:
-            print(f"Error deleting file {file_path}: {e}")
-
-    # Check for files in WEEKLYDROP
-    files = [f for f in os.listdir(WEEKLYDROP_DIR) if f.lower().endswith('.csv')]
-
-    # Handle cases based on the number of CSV files
-    if len(files) == 0:
-        raise Exception("No CSV file found in the WEEKLYDROP directory.")
-    elif len(files) > 1:
-        raise Exception(f"Multiple CSV files found in the WEEKLYDROP directory: {', '.join(files)}. Please ensure only one CSV file is present.")
+            print(f"Error deleting file {file_path_to_delete}: {e}")
 
     # Get the file name
-    file_name = files[0]
+    file_name = os.path.basename(file_path)
 
     # Read the CSV file
     try:
-        df = pd.read_csv(os.path.join(WEEKLYDROP_DIR, file_name))
+        df = pd.read_csv(file_path)
     except Exception as e:
         raise Exception(f"Error reading the CSV file: {str(e)}")
 
     # Check if required columns exist
     required_columns = ['Vendor', 'Product', 'Package ID', 'Room', 'Available', 'Expiration date']
     missing_columns = [col for col in required_columns if col not in df.columns]
-
     if missing_columns:
         raise Exception(f"The following required columns are missing: {', '.join(missing_columns)}")
 
@@ -79,12 +63,12 @@ def process_weekly_csv():
     df = df.drop('Sort_ID', axis=1)
 
     # Add new columns
-    df['Exp Date Conf.'] = ''  # Column G
-    df['Fulfillment'] = ''     # Column H
-    df['Vaults'] = ''           # Column I
-    df['Sold'] = ''            # Column J
-    df['Total'] = ''           # Column K
-    df['✓'] = ''               # Column L with checkmark symbol
+    df['Exp Date Conf.'] = '' # Column G
+    df['Fulfillment'] = '' # Column H
+    df['Vaults'] = '' # Column I
+    df['Sold'] = '' # Column J
+    df['Total'] = '' # Column K
+    df['✓'] = '' # Column L with checkmark symbol
 
     # Reorder columns
     new_order = ['Vendor', 'Product', 'Package ID', 'Room', 'Available', 'Expiration date',
@@ -107,7 +91,7 @@ def process_weekly_csv():
                                  top=Side(style='thin'),
                                  bottom=Side(style='thin'))
             # Align columns A and B to the left, others to the center
-            if c_idx in [1, 2]:  # Columns A and B
+            if c_idx in [1, 2]: # Columns A and B
                 cell.alignment = Alignment(horizontal='left', vertical='center')
             else:
                 cell.alignment = Alignment(horizontal='center', vertical='center')
@@ -119,32 +103,31 @@ def process_weekly_csv():
     ws.page_setup.orientation = ws.ORIENTATION_LANDSCAPE
 
     # Set the title rows to repeat on each page
-    ws.print_title_rows = '1:1'  # This will repeat the first row on each page
+    ws.print_title_rows = '1:1' # This will repeat the first row on each page
 
     # Add custom header and footer
     current_date = date.today().strftime("%m/%d/%Y")
     ws.oddHeader.left.text = "Discrepancies: _________________"
     ws.oddHeader.center.text = f"{company_name} Physical Count {current_date}"
     ws.oddHeader.right.text = "Name + Badge: ___________________"
-    ws.oddFooter.center.text = "&P"  # Page number
+    ws.oddFooter.center.text = "&P" # Page number
 
     # Adjust page setup for better fit
     ws.page_setup.fitToWidth = 1
-    ws.page_setup.fitToHeight = 0  # 0 means it will use as many pages as needed vertically
+    ws.page_setup.fitToHeight = 0 # 0 means it will use as many pages as needed vertically
 
     # Save the workbook
     output_file = os.path.join(WEEKLYCOMPLETE_DIR, f'{company_name}_{os.path.splitext(file_name)[0]}.xlsx')
     wb.save(output_file)
-
     print(f"Weekly Count Excel file has been saved to {output_file}")
 
-    # Code to delete the original file from WEEKLYDROP directory
+    # Code to delete the original file
     try:
-        os.remove(os.path.join(WEEKLYDROP_DIR, file_name))
-        print(f"Original file {file_name} has been deleted from {WEEKLYDROP_DIR}")
+        os.remove(file_path)
+        print(f"Original file {file_name} has been deleted")
     except Exception as e:
         print(f"Error deleting original file {file_name}: {e}")
 
-    return output_file  # Return the path of the processed file
+    return os.path.basename(output_file)  # Return just the filename
 
-# The __main__ check is removed as this will now be called from app.py
+    

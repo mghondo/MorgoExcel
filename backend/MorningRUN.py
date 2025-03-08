@@ -11,7 +11,7 @@ file_complete_folder = os.path.join(lib_folder, 'MORNINGCOMPLETE')
 os.makedirs(file_render_folder, exist_ok=True)
 os.makedirs(file_complete_folder, exist_ok=True)
 
-def process_excel(input_path):
+def process_morning_file(input_path):
     current_date = datetime.now().strftime("%m.%d.%Y")
     
     try:
@@ -94,6 +94,8 @@ def process_excel(input_path):
         output_filename = f"{location_prefix}{current_date}.MorningCount.xlsx"
         output_path = os.path.join(file_complete_folder, output_filename)
         
+        new_sheet.delete_cols(5)
+
         new_workbook.save(output_path)
         print(f"Processed file saved as: {output_filename}")
         print(f"File saved to: {output_path}")
