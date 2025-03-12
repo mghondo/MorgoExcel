@@ -12,21 +12,73 @@ def process_dutchie_file(input_file, output_file):
         # Read the CSV file
         with open(input_file, 'r', newline='') as csvfile:
             csv_reader = csv.reader(csvfile)
+            headers = next(csv_reader)  # Read the header row
+
+            # Find the index of the "Vendor", "Category", "Room", and "Package ID" columns
+            vendor_index = headers.index("Vendor")
+            category_index = headers.index("Category")
+            room_index = headers.index("Room")
+
+            # Find Package ID index case-insensitively
+            package_id_index = next((i for i, h in enumerate(headers) if h.strip().lower() == "package id"), None)
+
+            # Move column "Vendor" to the far left (column A)
+            new_headers = [headers[vendor_index]] + headers[:vendor_index] + headers[vendor_index+1:]
+            ws.append(new_headers)  # Append the modified header row to the worksheet
+
+            backstock_rows = []
+            quarantine_rows = []
+            other_rows = []
+
             for row in csv_reader:
+                # Skip rows where Category is "Gear"
+                if row[category_index].strip().lower() == "gear":
+                    continue
+
+                # Move column "Vendor" to the far left (column A)
+                new_row = [row[vendor_index]] + row[:vendor_index] + row[vendor_index+1:]
+
+                # Modify Package ID to get the last four digits
+                new_package_id_index = next((i for i, h in enumerate(new_headers) if h.strip().lower() == "package id"), None)
+                if new_package_id_index is not None:
+                    new_row[new_package_id_index] = new_row[new_package_id_index][-4:]
+
+                # Separate rows based on Room value
+                if row[room_index].strip().lower() == "backstock":
+                    backstock_rows.append(new_row)
+                elif row[room_index].strip().lower() == "quarantine":
+                    quarantine_rows.append(new_row)
+                else:
+                    other_rows.append(new_row)
+
+            # Sort rows based on the first column (Vendor), case insensitive
+            backstock_rows.sort(key=lambda x: x[0].lower())
+            quarantine_rows.sort(key=lambda x: x[0].lower())
+            other_rows.sort(key=lambda x: x[0].lower())
+
+            # Append sorted rows to the worksheet
+            for row in backstock_rows + quarantine_rows + other_rows:
                 ws.append(row)
 
-        # Insert a new column A with title "Column"
-        ws.insert_cols(1)
-        ws['A1'] = "Count"
+            # Delete columns "Category", "Tags", and "Strain"
+            ws.delete_cols(new_headers.index("Strain") + 1)
+            ws.delete_cols(new_headers.index("Tags") + 1)
+            ws.delete_cols(new_headers.index("Category") + 1)
 
-        # Copy columns B and C (originally A and B) and insert them to the right of column D (originally C)
-        ws.insert_cols(5, 2)
-        for row in range(1, ws.max_row + 1):
-            ws.cell(row=row, column=5).value = ws.cell(row=row, column=2).value  # Copy column B to E
-            ws.cell(row=row, column=6).value = ws.cell(row=row, column=3).value  # Copy column C to F
+            # Delete all columns starting with G and going to the right
+            ws.delete_cols(7, ws.max_column - 6)
 
-        # Delete columns B and C (originally A and B)
-        ws.delete_cols(2, 2)
+            # Add columns titled "Fulfillment", "Vault", "Quarentine", "Backstock", "Total" and then Checkmark Symbol in order in the columns to the right
+            # Insert columns at index 7, 8, 9, 10"
+            ws.insert_cols(7, 4)
+            ws.cell(row=1, column=7, value="Fulfillment")
+            ws.cell(row=1, column=8, value="Vault")
+            ws.cell(row=1, column=9, value="Quarantine")
+            ws.cell(row=1, column=10, value="Backstock")
+            ws.cell(row=1, column=11, value="Total")
+            ws.cell(row=1, column=12, value="✔")
+
+            
 
         # Save the workbook as XLSX
         wb.save(output_file)

@@ -37,12 +37,13 @@ def process_metric_file(input_file, output_file):
     # Delete the last three columns (E, F, G)
     ws.delete_cols(ws.max_column - 2, 3)
 
-    # Add new titles to cells starting with E
-    new_titles = ['COUNT', 'Grams per', 'Dutchie Qty', 'Dutchie \n Location', 'Last 4 of \n pkd ID', 'Dutchie Product', 'Dutchie Vendor']
-    for index, title in enumerate(new_titles, start=5):  # Start from column E (5)
-        cell = ws.cell(row=1, column=index)
-        cell.value = title
-        cell.alignment = openpyxl.styles.Alignment(wrap_text=True)
+    # Add new columns at the end
+    # new_titles = ['COUNT', 'Grams per', 'Dutchie Qty', 'Dutchie \n Location', 'Last 4 of \n pkg ID', 'Dutchie \n Product', 'Dutchie \n Vendor']
+    # for index, title in enumerate(new_titles, start=ws.max_column + 1):  
+    #     # Start from the next column after the last existing column
+    #     cell = ws.cell(row=1, column=index)
+    #     cell.value = title
+    #     cell.alignment = openpyxl.styles.Alignment(wrap_text=True)
 
     # Save the workbook as XLSX
     wb.save(output_file)
