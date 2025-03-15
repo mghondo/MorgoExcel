@@ -93,22 +93,33 @@ def upload_metric_file():
 def upload_dutchie_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
+
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['DUTCHIE_UPLOAD_FOLDER'], filename)
         file.save(input_path)
+
         try:
             clear_output_directory(app.config['DUTCHIE_COMPLETE_FOLDER'])
+            process_dutchie_file(input_path, None)  # Allow dutchie.py to determine output_file
+            
+            # Dynamically find the generated file
             current_date = datetime.date.today().strftime("%Y-%m-%d")
-            output_filename = f'DUTCHIE-{current_date}.xlsx'
-            output_path = os.path.join(app.config['DUTCHIE_COMPLETE_FOLDER'], output_filename)
-            process_dutchie_file(input_path, output_path)
+            marengo_filename = f'Marengo-Dutchie-{current_date}.xlsx'
+            columbus_filename = f'Columbus-Dutchie-{current_date}.xlsx'
+
+            # Check which file exists
+            output_filename = marengo_filename if os.path.exists(os.path.join(app.config['DUTCHIE_COMPLETE_FOLDER'], marengo_filename)) else columbus_filename
+
             return jsonify({'filename': output_filename}), 200
+
         except Exception as e:
             return jsonify({'error': str(e)}), 500
+
 
 @app.route('/download/<folder>/<filename>', methods=['GET'])
 def download_file(folder, filename):

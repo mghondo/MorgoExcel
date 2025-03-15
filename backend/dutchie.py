@@ -68,8 +68,7 @@ def process_dutchie_file(input_file, output_file):
             # Delete all columns starting with G and going to the right
             ws.delete_cols(7, ws.max_column - 6)
 
-            # Add columns titled "Fulfillment", "Vault", "Quarentine", "Backstock", "Total" and then Checkmark Symbol in order in the columns to the right
-            # Insert columns at index 7, 8, 9, 10"
+            # Add columns titled "Fulfillment", "Vault", "Quarantine", "Backstock", "Total" and then Checkmark Symbol in order in the columns to the right
             ws.insert_cols(7, 4)
             ws.cell(row=1, column=7, value="Fulfillment")
             ws.cell(row=1, column=8, value="Vault")
@@ -78,7 +77,16 @@ def process_dutchie_file(input_file, output_file):
             ws.cell(row=1, column=11, value="Total")
             ws.cell(row=1, column=12, value="✔")
 
-            
+        # Determine the output filename based on the value in cell B2
+        if ws.cell(row=2, column=2).value.startswith('M'):
+            output_file = os.path.join("DUTCHIE-OUT", f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
+        else:
+            output_file = os.path.join("DUTCHIE-OUT", f'Columbus-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
+
+        # if ws.cell(row=2, column=2).value.startswith('M'):
+        #     output_file = f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx'
+        # else:
+        #     output_file = f'Columbus-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx'
 
         # Save the workbook as XLSX
         wb.save(output_file)
