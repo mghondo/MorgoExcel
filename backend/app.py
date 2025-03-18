@@ -11,6 +11,8 @@ import WeeklyRUN
 app = Flask(__name__)
 CORS(app)
 
+current_date = datetime.date.today().strftime("%m-%d-%Y")
+
 # File upload configurations
 UPLOAD_FOLDER = 'uploads'
 MORNING_UPLOAD_FOLDER = 'MORNINGDROP'
@@ -82,6 +84,7 @@ def upload_metric_file():
         input_path = os.path.join(app.config['METRIC_UPLOAD_FOLDER'], filename)
         file.save(input_path)
         try:
+            # output_filename = f'METRIC-{filename[:-4]}.xlsx'
             output_filename = f'METRIC-{filename[:-4]}.xlsx'
             output_path = os.path.join(app.config['METRIC_COMPLETE_FOLDER'], output_filename)
             process_metric_file(input_path, output_path)
@@ -108,7 +111,9 @@ def upload_dutchie_file():
             process_dutchie_file(input_path, None)  # Allow dutchie.py to determine output_file
             
             # Dynamically find the generated file
-            current_date = datetime.date.today().strftime("%Y-%m-%d")
+            # current_date = datetime.date.today().strftime("%Y-%m-%d")
+            current_date = datetime.date.today().strftime("%m-%d-%Y")
+
             marengo_filename = f'Marengo-Dutchie-{current_date}.xlsx'
             columbus_filename = f'Columbus-Dutchie-{current_date}.xlsx'
 

@@ -77,11 +77,22 @@ def process_dutchie_file(input_file, output_file):
             ws.cell(row=1, column=11, value="Total")
             ws.cell(row=1, column=12, value="✔")
 
+        current_date = datetime.date.today().strftime("%m-%d-%Y")
+
+        ws.oddHeader.left.text = "Discrepancies: _____________________________"
+        ws.oddHeader.center.text = f"Dutchie Weekly {current_date}"
+        ws.oddHeader.right.text = "Name + Badge: _____________________________"
+        ws.oddFooter.center.text = "&P"
+
         # Determine the output filename based on the value in cell B2
         if ws.cell(row=2, column=2).value.startswith('M'):
-            output_file = os.path.join("DUTCHIE-OUT", f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
+            # output_file = os.path.join("DUTCHIE-OUT", f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
+            output_file = os.path.join("DUTCHIE-OUT", f'Marengo-Dutchie-{datetime.date.today().strftime("%m-%d-%Y")}.xlsx')
+
         else:
-            output_file = os.path.join("DUTCHIE-OUT", f'Columbus-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
+            # output_file = os.path.join("DUTCHIE-OUT", f'Columbus-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
+            output_file = os.path.join("DUTCHIE-OUT", f'Columbus-Dutchie-{datetime.date.today().strftime("%m-%d-%Y")}.xlsx')
+
 
         # if ws.cell(row=2, column=2).value.startswith('M'):
         #     output_file = f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx'

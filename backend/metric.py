@@ -2,7 +2,7 @@ import os
 import csv
 import openpyxl
 from openpyxl.utils import get_column_letter
-import datetime
+from datetime import datetime
 
 def process_metric_file(input_file, output_file):
     # Create a new workbook
@@ -45,6 +45,13 @@ def process_metric_file(input_file, output_file):
     #     cell.value = title
     #     cell.alignment = openpyxl.styles.Alignment(wrap_text=True)
 
+    # Add page number in the middle footer
+    ws.oddFooter.center.text = "Page &[Page]"
+
+    # Add current date in the middle header
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    ws.oddHeader.center.text = f"Metric {current_date}"
+
     # Save the workbook as XLSX
     wb.save(output_file)
 
@@ -73,7 +80,7 @@ def main():
     print("Cleared METRIC-OUT directory (except 'temp' file)")
 
     # Get current date in YYYY-MM-DD format
-    current_date = datetime.date.today().strftime("%Y-%m-%d")
+    current_date = datetime.date.today().strftime("%m-%d-%Y")
 
     # Process all CSV files in the input directory
     for filename in os.listdir(input_dir):
