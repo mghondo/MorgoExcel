@@ -7,6 +7,7 @@ import datetime
 from flask_cors import CORS
 import MorningRUN
 import WeeklyRUN
+from order import process_order_file  # New import for order processing
 
 app = Flask(__name__)
 CORS(app)
@@ -19,6 +20,7 @@ MORNING_UPLOAD_FOLDER = 'MORNINGDROP'
 WEEKLY_UPLOAD_FOLDER = 'WEEKLYDROP'
 METRIC_UPLOAD_FOLDER = 'METRIC-IN'
 DUTCHIE_UPLOAD_FOLDER = 'DUTCHIE-IN'
+ORDER_UPLOAD_FOLDER = 'ORDER-IN'  # New folder for order processing
 MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_COMPLETE_FOLDER = 'WEEKLYCOMPLETE'
 METRIC_COMPLETE_FOLDER = 'METRIC-OUT'
@@ -30,6 +32,7 @@ app.config['MORNING_UPLOAD_FOLDER'] = MORNING_UPLOAD_FOLDER
 app.config['WEEKLY_UPLOAD_FOLDER'] = WEEKLY_UPLOAD_FOLDER
 app.config['METRIC_UPLOAD_FOLDER'] = METRIC_UPLOAD_FOLDER
 app.config['DUTCHIE_UPLOAD_FOLDER'] = DUTCHIE_UPLOAD_FOLDER
+app.config['ORDER_UPLOAD_FOLDER'] = ORDER_UPLOAD_FOLDER  # New config for order processing
 app.config['MORNING_COMPLETE_FOLDER'] = MORNING_COMPLETE_FOLDER
 app.config['WEEKLY_COMPLETE_FOLDER'] = WEEKLY_COMPLETE_FOLDER
 app.config['METRIC_COMPLETE_FOLDER'] = METRIC_COMPLETE_FOLDER
@@ -84,7 +87,6 @@ def upload_metric_file():
         input_path = os.path.join(app.config['METRIC_UPLOAD_FOLDER'], filename)
         file.save(input_path)
         try:
-            # output_filename = f'METRIC-{filename[:-4]}.xlsx'
             output_filename = f'METRIC-{filename[:-4]}.xlsx'
             output_path = os.path.join(app.config['METRIC_COMPLETE_FOLDER'], output_filename)
             process_metric_file(input_path, output_path)
@@ -96,35 +98,23 @@ def upload_metric_file():
 def upload_dutchie_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
-
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
-
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['DUTCHIE_UPLOAD_FOLDER'], filename)
         file.save(input_path)
-
         try:
             clear_output_directory(app.config['DUTCHIE_COMPLETE_FOLDER'])
-            process_dutchie_file(input_path, None)  # Allow dutchie.py to determine output_file
-            
-            # Dynamically find the generated file
-            # current_date = datetime.date.today().strftime("%Y-%m-%d")
+            process_dutchie_file(input_path, None)
             current_date = datetime.date.today().strftime("%m-%d-%Y")
-
             marengo_filename = f'Marengo-Dutchie-{current_date}.xlsx'
             columbus_filename = f'Columbus-Dutchie-{current_date}.xlsx'
-
-            # Check which file exists
             output_filename = marengo_filename if os.path.exists(os.path.join(app.config['DUTCHIE_COMPLETE_FOLDER'], marengo_filename)) else columbus_filename
-
             return jsonify({'filename': output_filename}), 200
-
         except Exception as e:
             return jsonify({'error': str(e)}), 500
-
 
 @app.route('/download/<folder>/<filename>', methods=['GET'])
 def download_file(folder, filename):
@@ -139,12 +129,35 @@ def download_file(folder, filename):
     else:
         return jsonify({'error': 'Invalid folder'}), 400
 
+# New route for order processing
+@app.route('/process-order', methods=['POST'])
+def handle_order_processing():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part'}), 400
+    file = request.files['file']
+    num_days = request.form.get('numOfDays', type=int)
+    if not num_days or num_days < 1 or num_days > 999:
+        return jsonify({'error': 'Invalid number of days (1-999 required)'}), 400
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'}), 400
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        file_path = os.path.join(app.config['ORDER_UPLOAD_FOLDER'], filename)
+        file.save(file_path)
+        try:
+            processed_data = process_order_file(file_path, num_days)
+            return jsonify(processed_data), 200
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+    return jsonify({'error': 'Invalid file type'}), 400
+
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(MORNING_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(METRIC_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(DUTCHIE_UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(ORDER_UPLOAD_FOLDER, exist_ok=True)  # New directory creation
     os.makedirs(MORNING_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(METRIC_COMPLETE_FOLDER, exist_ok=True)

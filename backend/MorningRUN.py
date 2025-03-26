@@ -53,7 +53,7 @@ def process_morning_file(input_path):
         for row in sorted_data_rows:
             new_sheet.append([cell.value for cell in row])
 
-        new_sheet.cell(row=1, column=4, value="Last 4 #s")
+        new_sheet.cell(row=1, column=4, value="Last 4 PKG ID")
         new_sheet.cell(row=1, column=2, value="Product Name")
         new_sheet.cell(row=1, column=8, value="Fulfillment")
         new_sheet.cell(row=1, column=9, value="Vault")
