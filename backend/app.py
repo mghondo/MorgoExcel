@@ -163,9 +163,10 @@ def handle_send_email():
     location = data.get('location', '')
     try:
         result = send_email(selected_items, email_type, location)
-        return jsonify(result), 200
+        return jsonify(result), 200 if 'message' in result else 500
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
 
 
 
