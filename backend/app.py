@@ -7,7 +7,8 @@ import datetime
 from flask_cors import CORS
 import MorningRUN
 import WeeklyRUN
-from order import process_order_file  # New import for order processing
+from order import process_order_file
+from email_sender import send_email  # New import for email functionality
 
 app = Flask(__name__)
 CORS(app)
@@ -20,7 +21,7 @@ MORNING_UPLOAD_FOLDER = 'MORNINGDROP'
 WEEKLY_UPLOAD_FOLDER = 'WEEKLYDROP'
 METRIC_UPLOAD_FOLDER = 'METRIC-IN'
 DUTCHIE_UPLOAD_FOLDER = 'DUTCHIE-IN'
-ORDER_UPLOAD_FOLDER = 'ORDER-IN'  # New folder for order processing
+ORDER_UPLOAD_FOLDER = 'ORDER-IN'
 MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_COMPLETE_FOLDER = 'WEEKLYCOMPLETE'
 METRIC_COMPLETE_FOLDER = 'METRIC-OUT'
@@ -32,7 +33,7 @@ app.config['MORNING_UPLOAD_FOLDER'] = MORNING_UPLOAD_FOLDER
 app.config['WEEKLY_UPLOAD_FOLDER'] = WEEKLY_UPLOAD_FOLDER
 app.config['METRIC_UPLOAD_FOLDER'] = METRIC_UPLOAD_FOLDER
 app.config['DUTCHIE_UPLOAD_FOLDER'] = DUTCHIE_UPLOAD_FOLDER
-app.config['ORDER_UPLOAD_FOLDER'] = ORDER_UPLOAD_FOLDER  # New config for order processing
+app.config['ORDER_UPLOAD_FOLDER'] = ORDER_UPLOAD_FOLDER
 app.config['MORNING_COMPLETE_FOLDER'] = MORNING_COMPLETE_FOLDER
 app.config['WEEKLY_COMPLETE_FOLDER'] = WEEKLY_COMPLETE_FOLDER
 app.config['METRIC_COMPLETE_FOLDER'] = METRIC_COMPLETE_FOLDER
@@ -129,7 +130,6 @@ def download_file(folder, filename):
     else:
         return jsonify({'error': 'Invalid folder'}), 400
 
-# New route for order processing
 @app.route('/process-order', methods=['POST'])
 def handle_order_processing():
     if 'file' not in request.files:
@@ -145,11 +145,29 @@ def handle_order_processing():
         file_path = os.path.join(app.config['ORDER_UPLOAD_FOLDER'], filename)
         file.save(file_path)
         try:
-            processed_data = process_order_file(file_path, num_days)
-            return jsonify(processed_data), 200
+            # processed_data = process_order_file(file_path, num_days)
+            # return jsonify(processed_data), 200
+            processed_data, location = process_order_file(file_path, num_days)
+            return jsonify({'vendor_data': processed_data, 'location': location}), 200
+
         except Exception as e:
             return jsonify({'error': str(e)}), 500
     return jsonify({'error': 'Invalid file type'}), 400
+
+# New route for sending emails
+@app.route('/send-email', methods=['POST'])
+def handle_send_email():
+    data = request.json
+    selected_items = data.get('selectedItems', {})
+    email_type = data.get('emailType', '')
+    location = data.get('location', '')
+    try:
+        result = send_email(selected_items, email_type, location)
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -157,7 +175,7 @@ if __name__ == '__main__':
     os.makedirs(WEEKLY_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(METRIC_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(DUTCHIE_UPLOAD_FOLDER, exist_ok=True)
-    os.makedirs(ORDER_UPLOAD_FOLDER, exist_ok=True)  # New directory creation
+    os.makedirs(ORDER_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(MORNING_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(METRIC_COMPLETE_FOLDER, exist_ok=True)

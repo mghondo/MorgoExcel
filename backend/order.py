@@ -8,14 +8,26 @@ def process_order_file(file_path, num_of_days):
         workbook = load_workbook(file_path)
         sheet = workbook.active
         sheet.delete_rows(1, 4)  # Remove first four rows
-        
+
+        product_sku = sheet['B2'].value
+        location = "Columbus" if product_sku[0].isdigit() else "Marengo" if product_sku[0].lower() == 'm' else "Unknown"
+
         vendor_data = {}
         column_indices = {
             'ProductDesc': None,
             'VendorName': None,
             'PosQty': None,
-            'RemainingQty': None
+            'RemainingQty': None,
+            'ProductSku': None
         }
+
+        # vendor_data = {}
+        # column_indices = {
+        #     'ProductDesc': None,
+        #     'VendorName': None,
+        #     'PosQty': None,
+        #     'RemainingQty': None
+        # }
 
         # Identify column indices from headers
         for cell in sheet[1]:
@@ -37,13 +49,16 @@ def process_order_file(file_path, num_of_days):
                     if days_until_sold_out <= 14:
                         vendor_data.setdefault(vendor_name, []).append({
                             'name': product_desc,
-                            'daysUntilSoldOut': days_until_sold_out
+                            'daysUntilSoldOut': days_until_sold_out,
+                            'remainingQty': remaining_qty
                         })
+
             
             except (TypeError, ValueError) as e:
                 continue  # Skip invalid rows
 
-        return vendor_data
+        return vendor_data, location
+
 
     except Exception as e:
         raise Exception(f"Order processing error: {str(e)}")
