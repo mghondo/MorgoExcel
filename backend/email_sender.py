@@ -3,6 +3,11 @@ from email.utils import formataddr
 import smtplib
 from flask import jsonify
 from smtplib import SMTPAuthenticationError, SMTPException
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 def send_email(selected_items, email_type, location):
     msg = EmailMessage()
@@ -74,7 +79,7 @@ def send_email(selected_items, email_type, location):
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.set_debuglevel(1)  # Enable debug output
             server.starttls()
-            server.login("morganhondros@gmail.com", "xuxn lqvi qdjo soou")
+            server.login("morganhondros@gmail.com", os.getenv('EMAIL_PASSWORD'))
             server.send_message(msg)
         return {'message': 'Email sent successfully'}
     except SMTPAuthenticationError as e:

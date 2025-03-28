@@ -8,10 +8,14 @@ from flask_cors import CORS
 import MorningRUN
 import WeeklyRUN
 from order import process_order_file
-from email_sender import send_email  # New import for email functionality
+from email_sender import send_email
+from buildscan import buildscan_bp, scan_pdf
 
 app = Flask(__name__)
 CORS(app)
+
+# Register the buildscan blueprint
+app.register_blueprint(buildscan_bp)
 
 current_date = datetime.date.today().strftime("%m-%d-%Y")
 
@@ -22,11 +26,13 @@ WEEKLY_UPLOAD_FOLDER = 'WEEKLYDROP'
 METRIC_UPLOAD_FOLDER = 'METRIC-IN'
 DUTCHIE_UPLOAD_FOLDER = 'DUTCHIE-IN'
 ORDER_UPLOAD_FOLDER = 'ORDER-IN'
+BUILD_IN_FOLDER = 'BUILD-IN'
 MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_COMPLETE_FOLDER = 'WEEKLYCOMPLETE'
 METRIC_COMPLETE_FOLDER = 'METRIC-OUT'
 DUTCHIE_COMPLETE_FOLDER = 'DUTCHIE-OUT'
-ALLOWED_EXTENSIONS = {'csv', 'xlsx'}
+
+ALLOWED_EXTENSIONS = {'csv', 'xlsx', 'pdf'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MORNING_UPLOAD_FOLDER'] = MORNING_UPLOAD_FOLDER
@@ -34,6 +40,7 @@ app.config['WEEKLY_UPLOAD_FOLDER'] = WEEKLY_UPLOAD_FOLDER
 app.config['METRIC_UPLOAD_FOLDER'] = METRIC_UPLOAD_FOLDER
 app.config['DUTCHIE_UPLOAD_FOLDER'] = DUTCHIE_UPLOAD_FOLDER
 app.config['ORDER_UPLOAD_FOLDER'] = ORDER_UPLOAD_FOLDER
+app.config['BUILD_IN_FOLDER'] = BUILD_IN_FOLDER
 app.config['MORNING_COMPLETE_FOLDER'] = MORNING_COMPLETE_FOLDER
 app.config['WEEKLY_COMPLETE_FOLDER'] = WEEKLY_COMPLETE_FOLDER
 app.config['METRIC_COMPLETE_FOLDER'] = METRIC_COMPLETE_FOLDER
@@ -168,7 +175,9 @@ def handle_send_email():
         return jsonify({'error': str(e)}), 500
 
 
-
+@app.route('/scan-pdf', methods=['POST'])
+def handle_scan_pdf():
+    return scan_pdf()
 
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -177,6 +186,7 @@ if __name__ == '__main__':
     os.makedirs(METRIC_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(DUTCHIE_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(ORDER_UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(BUILD_IN_FOLDER, exist_ok=True)
     os.makedirs(MORNING_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(METRIC_COMPLETE_FOLDER, exist_ok=True)
