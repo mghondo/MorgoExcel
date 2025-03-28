@@ -1,23 +1,26 @@
 from flask import Flask, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 import os
-from metric import process_metric_file
-from dutchie import process_dutchie_file, clear_output_directory
 import datetime
 from flask_cors import CORS
+
+# Import custom modules
+from metric import process_metric_file
+from dutchie import process_dutchie_file, clear_output_directory
 import MorningRUN
 import WeeklyRUN
 from order import process_order_file
 from email_sender import send_email
 from buildscan import buildscan_bp, scan_pdf
 
+# Initialize Flask app
 app = Flask(__name__)
-CORS(app)
+
+# Enable CORS for specific routes (CORS fix)
+CORS(app, resources={r"/upload/*": {"origins": "https://morgotools.com"}})
 
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
-
-current_date = datetime.date.today().strftime("%m-%d-%Y")
 
 # File upload configurations
 UPLOAD_FOLDER = 'uploads'
@@ -34,6 +37,7 @@ DUTCHIE_COMPLETE_FOLDER = 'DUTCHIE-OUT'
 
 ALLOWED_EXTENSIONS = {'csv', 'xlsx', 'pdf'}
 
+# Configure upload folders in Flask app
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MORNING_UPLOAD_FOLDER'] = MORNING_UPLOAD_FOLDER
 app.config['WEEKLY_UPLOAD_FOLDER'] = WEEKLY_UPLOAD_FOLDER
@@ -46,16 +50,21 @@ app.config['WEEKLY_COMPLETE_FOLDER'] = WEEKLY_COMPLETE_FOLDER
 app.config['METRIC_COMPLETE_FOLDER'] = METRIC_COMPLETE_FOLDER
 app.config['DUTCHIE_COMPLETE_FOLDER'] = DUTCHIE_COMPLETE_FOLDER
 
+# Helper function to check allowed file types
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+# Define routes for file uploads and processing
 
 @app.route('/upload/morning', methods=['POST'])
 def upload_morning_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
+
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file_path = os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename)
@@ -70,9 +79,11 @@ def upload_morning_file():
 def upload_weekly_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
+
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file_path = os.path.join(app.config['WEEKLY_UPLOAD_FOLDER'], filename)
@@ -87,9 +98,11 @@ def upload_weekly_file():
 def upload_metric_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
+
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['METRIC_UPLOAD_FOLDER'], filename)
@@ -106,9 +119,11 @@ def upload_metric_file():
 def upload_dutchie_file():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
+
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['DUTCHIE_UPLOAD_FOLDER'], filename)
@@ -124,44 +139,6 @@ def upload_dutchie_file():
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
-@app.route('/download/<folder>/<filename>', methods=['GET'])
-def download_file(folder, filename):
-    if folder == 'morning':
-        return send_from_directory(app.config['MORNING_COMPLETE_FOLDER'], filename)
-    elif folder == 'weekly':
-        return send_from_directory(app.config['WEEKLY_COMPLETE_FOLDER'], filename)
-    elif folder == 'metric':
-        return send_from_directory(app.config['METRIC_COMPLETE_FOLDER'], filename)
-    elif folder == 'dutchie':
-        return send_from_directory(app.config['DUTCHIE_COMPLETE_FOLDER'], filename)
-    else:
-        return jsonify({'error': 'Invalid folder'}), 400
-
-@app.route('/process-order', methods=['POST'])
-def handle_order_processing():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'}), 400
-    file = request.files['file']
-    num_days = request.form.get('numOfDays', type=int)
-    if not num_days or num_days < 1 or num_days > 999:
-        return jsonify({'error': 'Invalid number of days (1-999 required)'}), 400
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
-    if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        file_path = os.path.join(app.config['ORDER_UPLOAD_FOLDER'], filename)
-        file.save(file_path)
-        try:
-            # processed_data = process_order_file(file_path, num_days)
-            # return jsonify(processed_data), 200
-            processed_data, location = process_order_file(file_path, num_days)
-            return jsonify({'vendor_data': processed_data, 'location': location}), 200
-
-        except Exception as e:
-            return jsonify({'error': str(e)}), 500
-    return jsonify({'error': 'Invalid file type'}), 400
-
-# New route for sending emails
 @app.route('/send-email', methods=['POST'])
 def handle_send_email():
     data = request.json
@@ -174,12 +151,8 @@ def handle_send_email():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-
-@app.route('/scan-pdf', methods=['POST'])
-def handle_scan_pdf():
-    return scan_pdf()
-
 if __name__ == '__main__':
+    # Ensure all required directories exist before running the app.
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(MORNING_UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(WEEKLY_UPLOAD_FOLDER, exist_ok=True)
@@ -191,4 +164,5 @@ if __name__ == '__main__':
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(METRIC_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(DUTCHIE_COMPLETE_FOLDER, exist_ok=True)
+
     app.run(debug=True)
