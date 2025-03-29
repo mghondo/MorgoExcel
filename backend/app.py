@@ -13,11 +13,14 @@ from order import process_order_file
 from email_sender import send_email
 from buildscan import buildscan_bp, scan_pdf
 
-# Initialize Flask app
 app = Flask(__name__)
+CORS(app)
 
-# Enable CORS for specific routes (CORS fix)
-CORS(app, resources={r"/upload/*": {"origins": "https://morgotools.com"}})
+# # Initialize Flask app
+# app = Flask(__name__)
+
+# # Enable CORS for specific routes (CORS fix)
+# CORS(app, resources={r"/upload/*": {"origins": "https://morgotools.com"}})
 
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
