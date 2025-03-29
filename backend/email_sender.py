@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+email_address = os.getenv('EMAIL_ADDRESS')
+email_password = os.getenv('EMAIL_PASSWORD')
+
 def send_email(selected_items, email_type, location):
     msg = EmailMessage()
     msg['Subject'] = f"LOW STOCK ALERT - From Verdant Creations in {location}."
@@ -79,7 +82,7 @@ def send_email(selected_items, email_type, location):
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.set_debuglevel(1)  # Enable debug output
             server.starttls()
-            server.login("morganhondros@gmail.com", "xuxn lqvi qdjo soou")
+            server.login(email_address, email_password)
             server.send_message(msg)
         return {'message': 'Email sent successfully'}
     except SMTPAuthenticationError as e:

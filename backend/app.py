@@ -16,12 +16,6 @@ from buildscan import buildscan_bp, scan_pdf
 app = Flask(__name__)
 CORS(app)
 
-# # Initialize Flask app
-# app = Flask(__name__)
-
-# # Enable CORS for specific routes (CORS fix)
-# CORS(app, resources={r"/upload/*": {"origins": "https://morgotools.com"}})
-
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
 
@@ -37,6 +31,7 @@ MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_COMPLETE_FOLDER = 'WEEKLYCOMPLETE'
 METRIC_COMPLETE_FOLDER = 'METRIC-OUT'
 DUTCHIE_COMPLETE_FOLDER = 'DUTCHIE-OUT'
+ORDER_COMPLETE_FOLDER = 'ORDER-OUT'
 
 ALLOWED_EXTENSIONS = {'csv', 'xlsx', 'pdf'}
 
@@ -52,13 +47,15 @@ app.config['MORNING_COMPLETE_FOLDER'] = MORNING_COMPLETE_FOLDER
 app.config['WEEKLY_COMPLETE_FOLDER'] = WEEKLY_COMPLETE_FOLDER
 app.config['METRIC_COMPLETE_FOLDER'] = METRIC_COMPLETE_FOLDER
 app.config['DUTCHIE_COMPLETE_FOLDER'] = DUTCHIE_COMPLETE_FOLDER
+app.config['ORDER_COMPLETE_FOLDER'] = ORDER_COMPLETE_FOLDER
 
 # Helper function to check allowed file types
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-# Define routes for file uploads and processing
+# ------------------- Existing Routes -------------------
 
+# Morning file routes (preserved)
 @app.route('/upload/morning', methods=['POST'])
 def upload_morning_file():
     if 'file' not in request.files:
@@ -72,12 +69,21 @@ def upload_morning_file():
         filename = secure_filename(file.filename)
         file_path = os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename)
         file.save(file_path)
+
         try:
             processed_filename = MorningRUN.process_morning_file(file_path)
             return jsonify({'filename': processed_filename}), 200
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
+@app.route('/download/morning/<filename>', methods=['GET'])
+def download_morning_file(filename):
+    try:
+        return send_from_directory(app.config['MORNING_COMPLETE_FOLDER'], filename, as_attachment=True)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Weekly file routes (preserved)
 @app.route('/upload/weekly', methods=['POST'])
 def upload_weekly_file():
     if 'file' not in request.files:
@@ -91,12 +97,21 @@ def upload_weekly_file():
         filename = secure_filename(file.filename)
         file_path = os.path.join(app.config['WEEKLY_UPLOAD_FOLDER'], filename)
         file.save(file_path)
+
         try:
             processed_filename = WeeklyRUN.process_weekly_file(file_path)
             return jsonify({'filename': processed_filename}), 200
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
+@app.route('/download/weekly/<filename>', methods=['GET'])
+def download_weekly_file(filename):
+    try:
+        return send_from_directory(app.config['WEEKLY_COMPLETE_FOLDER'], filename, as_attachment=True)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Metric file routes (preserved)
 @app.route('/upload/metric', methods=['POST'])
 def upload_metric_file():
     if 'file' not in request.files:
@@ -110,6 +125,7 @@ def upload_metric_file():
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['METRIC_UPLOAD_FOLDER'], filename)
         file.save(input_path)
+
         try:
             output_filename = f'METRIC-{filename[:-4]}.xlsx'
             output_path = os.path.join(app.config['METRIC_COMPLETE_FOLDER'], output_filename)
@@ -118,6 +134,14 @@ def upload_metric_file():
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
+@app.route('/download/metric/<filename>', methods=['GET'])
+def download_metric_file(filename):
+    try:
+        return send_from_directory(app.config['METRIC_COMPLETE_FOLDER'], filename, as_attachment=True)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Dutchie file routes (preserved)
 @app.route('/upload/dutchie', methods=['POST'])
 def upload_dutchie_file():
     if 'file' not in request.files:
@@ -131,6 +155,7 @@ def upload_dutchie_file():
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['DUTCHIE_UPLOAD_FOLDER'], filename)
         file.save(input_path)
+
         try:
             clear_output_directory(app.config['DUTCHIE_COMPLETE_FOLDER'])
             process_dutchie_file(input_path, None)
@@ -142,17 +167,50 @@ def upload_dutchie_file():
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
-@app.route('/send-email', methods=['POST'])
-def handle_send_email():
-    data = request.json
-    selected_items = data.get('selectedItems', {})
-    email_type = data.get('emailType', '')
-    location = data.get('location', '')
+@app.route('/download/dutchie/<filename>', methods=['GET'])
+def download_dutchie_file(filename):
     try:
-        result = send_email(selected_items, email_type, location)
-        return jsonify(result), 200 if 'message' in result else 500
+        return send_from_directory(app.config['DUTCHIE_COMPLETE_FOLDER'], filename, as_attachment=True)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+# ------------------- New Ordering Routes -------------------
+
+@app.route('/process-order', methods=['POST'])
+def process_order():
+    if 'file' not in request.files or 'numOfDays' not in request.form:
+        return jsonify({'error': 'File and number of days are required'}), 400
+
+    file = request.files['file']
+    num_of_days_str = request.form.get('numOfDays')
+
+    if not num_of_days_str.isdigit() or int(num_of_days_str) <= 0:
+        return jsonify({'error': 'Invalid number of days'}), 400
+
+    num_of_days = int(num_of_days_str)
+
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        input_path = os.path.join(app.config['ORDER_UPLOAD_FOLDER'], filename)
+        file.save(input_path)
+
+        try:
+            vendor_data, location = process_order_file(input_path, num_of_days)
+            output_filename = f'ORDER-{filename[:-5]}-{datetime.date.today().strftime("%m-%d-%Y")}.xlsx'
+            output_path = os.path.join(app.config['ORDER_COMPLETE_FOLDER'], output_filename)
+            # Save processed data to output_path (if needed by the frontend later).
+            return jsonify({'vendor_data': vendor_data, 'location': location}), 200
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+
+@app.route('/download/order/<filename>', methods=['GET'])
+def download_order_file(filename):
+    try:
+        return send_from_directory(app.config['ORDER_COMPLETE_FOLDER'], filename, as_attachment=True)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# ------------------- Main Application Entry -------------------
 
 if __name__ == '__main__':
     # Ensure all required directories exist before running the app.
@@ -167,5 +225,6 @@ if __name__ == '__main__':
     os.makedirs(WEEKLY_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(METRIC_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(DUTCHIE_COMPLETE_FOLDER, exist_ok=True)
+    os.makedirs(ORDER_COMPLETE_FOLDER, exist_ok=True)
 
     app.run(debug=True)
