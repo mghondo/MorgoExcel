@@ -16,6 +16,7 @@ from buildscan import buildscan_bp, scan_pdf
 app = Flask(__name__)
 CORS(app)
 
+
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
 
