@@ -14,8 +14,9 @@ from email_sender import send_email
 from buildscan import buildscan_bp, scan_pdf
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
+CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000"]}})
 
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
@@ -210,6 +211,11 @@ def download_order_file(filename):
         return send_from_directory(app.config['ORDER_COMPLETE_FOLDER'], filename, as_attachment=True)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
+@app.route('/health', methods=['GET'])
+def health_check():
+    return {"status": "healthy"}, 200
+
 
 # ------------------- Main Application Entry -------------------
 
