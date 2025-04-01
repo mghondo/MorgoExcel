@@ -16,7 +16,7 @@ from buildscan import buildscan_bp, scan_pdf
 app = Flask(__name__)
 # CORS(app)
 
-CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000"]}})
+CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000", "https://www.morgotools.com"]}})
 
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
