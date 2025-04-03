@@ -51,13 +51,30 @@ def process_dutchie_file(input_file, output_file):
                 else:
                     other_rows.append(new_row)
 
-            # Sort rows based on the first column (Vendor), case insensitive
-            backstock_rows.sort(key=lambda x: x[0].lower())
-            quarantine_rows.sort(key=lambda x: x[0].lower())
-            other_rows.sort(key=lambda x: x[0].lower())
+            # Combine all rows
+            all_rows = backstock_rows + quarantine_rows + other_rows
+
+            # Sort rows based on Room, Vendor, and Package ID
+            def sort_key(row, headers):
+                # Adjust indices since "Vendor" is moved to the first position
+                vendor_index = 0
+                room_index = next((i for i, h in enumerate(headers) if h.strip().lower() == "room"), None)
+                package_id_index = next((i for i, h in enumerate(headers) if h.strip().lower() == "package id"), None)
+                
+                # Try to convert Package ID to int, otherwise use a high value to place at the end
+                try:
+                    package_id_value = int(row[package_id_index])
+                except ValueError:
+                    package_id_value = float('inf')  # Place non-numeric IDs at the end
+                
+                # Sort key
+                return (row[room_index].lower(), row[vendor_index].lower(), package_id_value)
+
+            # Apply sorting
+            sorted_rows = sorted(all_rows, key=lambda row: sort_key(row, new_headers))
 
             # Append sorted rows to the worksheet
-            for row in backstock_rows + quarantine_rows + other_rows:
+            for row in sorted_rows:
                 ws.append(row)
 
             # Delete columns "Category", "Tags", and "Strain"
@@ -85,19 +102,13 @@ def process_dutchie_file(input_file, output_file):
         ws.oddFooter.center.text = "&P"
 
         # Determine the output filename based on the value in cell B2
-        if ws.cell(row=2, column=2).value.startswith('M'):
+        if ws.cell(row=2, column=2).value and ws.cell(row=2, column=2).value.startswith('M'):
             # output_file = os.path.join("DUTCHIE-OUT", f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
             output_file = os.path.join("DUTCHIE-OUT", f'Marengo-Dutchie-{datetime.date.today().strftime("%m-%d-%Y")}.xlsx')
 
         else:
             # output_file = os.path.join("DUTCHIE-OUT", f'Columbus-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx')
             output_file = os.path.join("DUTCHIE-OUT", f'Columbus-Dutchie-{datetime.date.today().strftime("%m-%d-%Y")}.xlsx')
-
-
-        # if ws.cell(row=2, column=2).value.startswith('M'):
-        #     output_file = f'Marengo-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx'
-        # else:
-        #     output_file = f'Columbus-Dutchie-{datetime.date.today().strftime("%Y-%m-%d")}.xlsx'
 
         # Save the workbook as XLSX
         wb.save(output_file)

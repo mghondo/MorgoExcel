@@ -1,23 +1,23 @@
-from email.message import EmailMessage
-from email.utils import formataddr
 import smtplib
-from flask import jsonify
-from smtplib import SMTPAuthenticationError, SMTPException
-import os
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
-
-email_address = os.getenv('EMAIL_ADDRESS')
-email_password = os.getenv('EMAIL_PASSWORD')
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 def send_email(selected_items, email_type, location):
-    msg = EmailMessage()
-    msg['Subject'] = f"LOW STOCK ALERT - From Verdant Creations in {location}."
-    msg['From'] = formataddr(("Morgan Hondros", "morganhondros@gmail.com"))
-    msg['To'] = formataddr(("Morgan Hondros", "morgan@hondros-co.com"))
+    # SMTP Configuration
+    SMTP_SERVER = "smtp.gmail.com"
+    SMTP_PORT = 587
+    EMAIL_USER = "morganhondros@gmail.com"
+    EMAIL_PASSWORD = "twws rmry phqz eopu"  # App-specific password
+    RECIPIENT_EMAIL = "morgan@hondros-co.com"
 
+    # Create message container
+    msg = MIMEMultipart('alternative')
+    # msg['From'] = EMAIL_USER
+    msg['From'] = f"Morgan Hondros <{EMAIL_USER}>"  # Include name and email
+    msg['To'] = RECIPIENT_EMAIL
+    msg['Subject'] = f"Verdant Creations {location}: Low Stock Alert"
+
+    # Build HTML content with styling
     html_content = f"""
     <html>
     <head>
@@ -76,18 +76,15 @@ def send_email(selected_items, email_type, location):
     </html>
     """
 
-    msg.set_content(html_content, subtype='html', charset='utf-8')
+    # Attach HTML content to email
+    msg.attach(MIMEText(html_content, 'html'))
 
     try:
-        with smtplib.SMTP('smtp.gmail.com', 587) as server:
-            server.set_debuglevel(1)  # Enable debug output
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.ehlo()
             server.starttls()
-            server.login(email_address, email_password)
-            server.send_message(msg)
-        return {'message': 'Email sent successfully'}
-    except SMTPAuthenticationError as e:
-        return {'error': f"Authentication error: {str(e)}"}
-    except SMTPException as e:
-        return {'error': f"SMTP error: {str(e)}"}
+            server.login(EMAIL_USER, EMAIL_PASSWORD)
+            server.sendmail(EMAIL_USER, RECIPIENT_EMAIL, msg.as_string())
+        return {"status": "success", "message": "Email sent successfully"}
     except Exception as e:
-        return {'error': f"General error: {str(e)}"}
+        return {"status": "error", "message": str(e)}

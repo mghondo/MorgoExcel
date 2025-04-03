@@ -16,7 +16,8 @@ from buildscan import buildscan_bp, scan_pdf
 app = Flask(__name__)
 # CORS(app)
 
-CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000"]}})
+# CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000"]}})
+CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000", "https://www.morgotools.com"]}})
 
 # Register the buildscan blueprint
 app.register_blueprint(buildscan_bp)
@@ -56,6 +57,24 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # ------------------- Existing Routes -------------------
+
+@app.route('/send-email', methods=['POST'])
+def handle_email():
+    try:
+        data = request.json
+        result = send_email(
+            selected_items=data.get('selectedItems', {}),
+            email_type=data.get('emailType', 'low_stock'),
+            location=data.get('location', 'Unknown Location')
+        )
+        
+        if result['status'] == 'success':
+            return jsonify({"message": "Email sent successfully!"}), 200
+        else:
+            return jsonify({"error": result['message']}), 500
+            
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 # Morning file routes (preserved)
 @app.route('/upload/morning', methods=['POST'])
@@ -215,6 +234,8 @@ def download_order_file(filename):
 @app.route('/health', methods=['GET'])
 def health_check():
     return {"status": "healthy"}, 200
+
+
 
 
 # ------------------- Main Application Entry -------------------
