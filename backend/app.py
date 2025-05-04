@@ -11,24 +11,23 @@ import MorningRUN
 import WeeklyRUN
 from order import process_order_file
 from email_sender import send_email
-from buildscan import buildscan_bp, scan_pdf
+from buildscan import buildscan_bp  # Importing buildscan blueprint
+from BuildComponent.PDFBuild import extract_data  # Import PDFBuild from BuildComponent
 
 app = Flask(__name__)
-# CORS(app)
-
 CORS(app, resources={r"/*": {"origins": ["https://morgotools.com", "http://localhost:3000", "https://www.morgotools.com"]}})
 
-# Register the buildscan blueprint
-app.register_blueprint(buildscan_bp)
+# Register the buildscan blueprint with URL prefix
+app.register_blueprint(buildscan_bp, url_prefix='/api/buildscan')
 
 # File upload configurations
-UPLOAD_FOLDER = 'uploads'
+UPLOAD_FOLDER = 'Uploads'
 MORNING_UPLOAD_FOLDER = 'MORNINGDROP'
 WEEKLY_UPLOAD_FOLDER = 'WEEKLYDROP'
 METRIC_UPLOAD_FOLDER = 'METRIC-IN'
 DUTCHIE_UPLOAD_FOLDER = 'DUTCHIE-IN'
 ORDER_UPLOAD_FOLDER = 'ORDER-IN'
-BUILD_IN_FOLDER = 'BUILD-IN'
+BUILD_IN_FOLDER = 'BUILD-IN'  # For buildscan functionality
 MORNING_COMPLETE_FOLDER = 'MORNINGCOMPLETE'
 WEEKLY_COMPLETE_FOLDER = 'WEEKLYCOMPLETE'
 METRIC_COMPLETE_FOLDER = 'METRIC-OUT'
@@ -55,8 +54,32 @@ app.config['ORDER_COMPLETE_FOLDER'] = ORDER_COMPLETE_FOLDER
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-# ------------------- Existing Routes -------------------
+# New endpoint for PDF scanning
+@app.route('/api/scan-pdf', methods=['POST'])
+def scan_pdf():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part'}), 400
 
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'}), 400
+
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        file_path = os.path.join(app.config['BUILD_IN_FOLDER'], filename)
+        file.save(file_path)
+
+        try:
+            data = extract_data(file_path)
+            if "error" in data:
+                return jsonify({'error': data["error"]}), 500
+            return jsonify(data), 200
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+    else:
+        return jsonify({'error': 'Invalid file type, only PDFs are allowed'}), 400
+
+# Existing Routes
 @app.route('/send-email', methods=['POST'])
 def handle_email():
     try:
@@ -75,7 +98,6 @@ def handle_email():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Morning file routes (preserved)
 @app.route('/upload/morning', methods=['POST'])
 def upload_morning_file():
     if 'file' not in request.files:
@@ -103,7 +125,6 @@ def download_morning_file(filename):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# Weekly file routes (preserved)
 @app.route('/upload/weekly', methods=['POST'])
 def upload_weekly_file():
     if 'file' not in request.files:
@@ -131,7 +152,6 @@ def download_weekly_file(filename):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# Metric file routes (preserved)
 @app.route('/upload/metric', methods=['POST'])
 def upload_metric_file():
     if 'file' not in request.files:
@@ -161,7 +181,6 @@ def download_metric_file(filename):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# Dutchie file routes (preserved)
 @app.route('/upload/dutchie', methods=['POST'])
 def upload_dutchie_file():
     if 'file' not in request.files:
@@ -193,51 +212,6 @@ def download_dutchie_file(filename):
         return send_from_directory(app.config['DUTCHIE_COMPLETE_FOLDER'], filename, as_attachment=True)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-
-# ------------------- New Ordering Routes -------------------
-
-@app.route('/process-order', methods=['POST'])
-def process_order():
-    if 'file' not in request.files or 'numOfDays' not in request.form:
-        return jsonify({'error': 'File and number of days are required'}), 400
-
-    file = request.files['file']
-    num_of_days_str = request.form.get('numOfDays')
-
-    if not num_of_days_str.isdigit() or int(num_of_days_str) <= 0:
-        return jsonify({'error': 'Invalid number of days'}), 400
-
-    num_of_days = int(num_of_days_str)
-
-    if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        input_path = os.path.join(app.config['ORDER_UPLOAD_FOLDER'], filename)
-        file.save(input_path)
-
-        try:
-            vendor_data, location = process_order_file(input_path, num_of_days)
-            output_filename = f'ORDER-{filename[:-5]}-{datetime.date.today().strftime("%m-%d-%Y")}.xlsx'
-            output_path = os.path.join(app.config['ORDER_COMPLETE_FOLDER'], output_filename)
-            # Save processed data to output_path (if needed by the frontend later).
-            return jsonify({'vendor_data': vendor_data, 'location': location}), 200
-        except Exception as e:
-            return jsonify({'error': str(e)}), 500
-
-@app.route('/download/order/<filename>', methods=['GET'])
-def download_order_file(filename):
-    try:
-        return send_from_directory(app.config['ORDER_COMPLETE_FOLDER'], filename, as_attachment=True)
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-    
-@app.route('/health', methods=['GET'])
-def health_check():
-    return {"status": "healthy"}, 200
-
-
-
-
-# ------------------- Main Application Entry -------------------
 
 if __name__ == '__main__':
     # Ensure all required directories exist before running the app.
