@@ -62,7 +62,8 @@ def extract_data(pdf_file):
                 "type": item["Category"],
                 "strain": item["Strain"],
                 "days": item["Days"],
-                "weight": item["Weight"]
+                "weight": item["Weight"],
+                "Item_Details": item["Item_Details"]  # Add Item_Details to the response
             }
             for item in m_numbers
         ]
