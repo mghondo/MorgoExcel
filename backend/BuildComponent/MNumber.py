@@ -59,7 +59,7 @@ def extract_m_numbers(pdf_path):
 
                 try:
                     # Extract Package ID
-                    package_id_match = re.search(r"1A\d{19,30}", block)
+                    package_id_match = re.search(r"1A[A-Za-z0-9]{19,30}", block)
                     package_id = package_id_match.group(0) if package_id_match else "Unknown"
                     logging.debug(f"Package {package_count}, Package ID: {package_id}")
 

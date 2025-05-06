@@ -10284,3 +10284,1731 @@ piece=600mg | Supply: 1 day(s) | Qty: 110 mg
 INFO:root:Total packages processed: 62
 INFO:root:Total M Numbers extracted: 35
 INFO:werkzeug:127.0.0.1 - - [04/May/2025 22:56:21] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 2
+INFO:root:Found 40 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00000703301, Length: 12
+INFO:root:Found Item Details for package 2: Strain: Runtz Berries | Brand: Plant Mat - Hybrid - 26.9 - Runtz Berries - A Buds | THC: 26.9% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted Name for package 2: Runtz Berries
+INFO:root:Extracted Strain for package 2: Hybrid
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight for package 2: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000703301, Package ID: 1A4071500002711000024066, Name: Runtz Berries, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Runtz Berries | Brand: Plant Mat - Hybrid - 26.9 - Runtz Berries - A Buds | THC: 26.9% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted M Number: M00001045314, Length: 12
+INFO:root:Found Item Details for package 3: Strain: Sherb Envy | Brand: Plant Mat - Indica - 23.4 - Sherb Envy - 14.15g | THC: 23.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 3: Sherb Envy
+INFO:root:Extracted Strain for package 3: Indica
+INFO:root:Extracted Days for package 3: 5
+INFO:root:Extracted Weight for package 3: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001045314, Package ID: 1A4071500002711000024067, Name: Sherb Envy, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Sherb Envy | Brand: Plant Mat - Indica - 23.4 - Sherb Envy - 14.15g | THC: 23.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00000917506, Length: 12
+INFO:root:Found Item Details for package 4: Strain: Sugar Cake | Brand: Plant Mat - Indica - 24.4 - Sugar Cake - 14.15g | THC: 24.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 4: Sugar Cake
+INFO:root:Extracted Strain for package 4: Indica
+INFO:root:Extracted Days for package 4: 5
+INFO:root:Extracted Weight for package 4: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00000917506, Package ID: 1A4071500002711000024068, Name: Sugar Cake, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Sugar Cake | Brand: Plant Mat - Indica - 24.4 - Sugar Cake - 14.15g | THC: 24.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001025705, Length: 12
+INFO:root:Found Item Details for package 5: Strain: Super Dawg OG | Brand: Plant Mat - Hybrid - 22.4 - Super Dawg OG - 14.15g | THC: 22.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 5: Super Dawg OG
+INFO:root:Extracted Strain for package 5: Hybrid
+INFO:root:Extracted Days for package 5: 5
+INFO:root:Extracted Weight for package 5: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001025705, Package ID: 1A4071500002711000024069, Name: Super Dawg OG, Strain: Hybrid, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Super Dawg OG | Brand: Plant Mat - Hybrid - 22.4 - Super Dawg OG - 14.15g | THC: 22.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001019907, Length: 12
+INFO:root:Found Item Details for package 6: Strain: The Soap | Brand: Plant Mat - Hybrid - 24.5 - The Soap - 14.15g | THC: 24.5% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 6: The Soap
+INFO:root:Extracted Strain for package 6: Hybrid
+INFO:root:Extracted Days for package 6: 5
+INFO:root:Extracted Weight for package 6: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001019907, Package ID: 1A4071500002711000024070, Name: The Soap, Strain: Hybrid, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: The Soap | Brand: Plant Mat - Hybrid - 24.5 - The Soap - 14.15g | THC: 24.5% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00000787319, Length: 12
+INFO:root:Found Item Details for package 7: Brand: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 7: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink
+INFO:root:Extracted Strain for package 7: Not Specified
+INFO:root:Extracted Days for package 7: 1
+INFO:root:Extracted Weight from Qty for package 7: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000787319, Package ID: 1A4071500002711000024071, Name: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000783001, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink
+INFO:root:Extracted Strain for package 8: Not Specified
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000783001, Package ID: 1A4071500002711000024072, Name: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000349814, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Oil for Vap - 10 - 35 - OG Kush Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 9: Oil for Vap - 10 - 35 - OG Kush Distillate Cart
+INFO:root:Extracted Strain for package 9: Not Specified
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000349814, Package ID: 1A4071500002711000024073, Name: Oil for Vap - 10 - 35 - OG Kush Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 35 - OG Kush Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00000972607, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Oil for Vap - 10 - 59 - RB CRM Distillate Cart | THC: 70% | THC: 588 mg | Wgt: 840 mg | Serving: one - 8 second inhale =
+14.24mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 10: Oil for Vap - 10 - 59 - RB CRM Distillate Cart
+INFO:root:Extracted Strain for package 10: Not Specified
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000972607, Package ID: 1A4071500002711000024074, Name: Oil for Vap - 10 - 59 - RB CRM Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 59 - RB CRM Distillate Cart | THC: 70% | THC: 588 mg | Wgt: 840 mg | Serving: one - 8 second inhale =
+14.24mg | Supply: 1 day(s) | Qty: 590 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00000890901, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN
+INFO:root:Extracted Strain for package 12: Not Specified
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000890901, Package ID: 1A4071500002711000024075, Name: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001006307, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 20 mg | Wgt: 12.4 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN
+INFO:root:Extracted Strain for package 14: Not Specified
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001006307, Package ID: 1A4071500002711000024076, Name: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 20 mg | Wgt: 12.4 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00001002401, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Edb Oral Admin - 10 - 10 - Chocolate Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 16: Edb Oral Admin - 10 - 10 - Chocolate Syrup
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 1
+INFO:root:Extracted Weight from Qty for package 16: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002401, Package ID: 1A4071500002711000024077, Name: Edb Oral Admin - 10 - 10 - Chocolate Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Chocolate Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000886001, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1
+- Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 18: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 1
+INFO:root:Extracted Weight from Qty for package 18: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000886001, Package ID: 1A4071500002711000024078, Name: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1
+- Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 19
+INFO:root:Extracted M Number: M00001002510, Length: 12
+INFO:root:Found Item Details for package 20: Brand: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1
+Dose 10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 20: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate
+INFO:root:Extracted Strain for package 20: Not Specified
+INFO:root:Extracted Days for package 20: 1
+INFO:root:Extracted Weight from Qty for package 20: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002510, Package ID: 1A4071500002711000024079, Name: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1
+Dose 10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 21
+INFO:root:Extracted M Number: M00000900506, Length: 12
+INFO:root:Found Item Details for package 22: Brand: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1 -
+Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 22: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG
+INFO:root:Extracted Strain for package 22: Not Specified
+INFO:root:Extracted Days for package 22: 1
+INFO:root:Extracted Weight from Qty for package 22: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000900506, Package ID: 1A4071500002711000024080, Name: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1 -
+Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 23
+INFO:root:Extracted M Number: M00001002613, Length: 12
+INFO:root:Found Item Details for package 24: Brand: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 24: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate
+INFO:root:Extracted Strain for package 24: Not Specified
+INFO:root:Extracted Days for package 24: 1
+INFO:root:Extracted Weight from Qty for package 24: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002613, Package ID: 1A4071500002711000024081, Name: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 25
+INFO:root:Extracted M Number: M00001002502, Length: 12
+INFO:root:Found Item Details for package 26: Brand: Edb oral admin - 10 - 10 - Salted Caramel Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 26: Edb oral admin - 10 - 10 - Salted Caramel Syrup
+INFO:root:Extracted Strain for package 26: Not Specified
+INFO:root:Extracted Days for package 26: 1
+INFO:root:Extracted Weight from Qty for package 26: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002502, Package ID: 1A4071500002711000024082, Name: Edb oral admin - 10 - 10 - Salted Caramel Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 10 - Salted Caramel Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 27
+INFO:root:Extracted M Number: M00001002501, Length: 12
+INFO:root:Found Item Details for package 28: Brand: Edb Oral Admin - 10 - 10 - Strawberry Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 28: Edb Oral Admin - 10 - 10 - Strawberry Syrup
+INFO:root:Extracted Strain for package 28: Not Specified
+INFO:root:Extracted Days for package 28: 1
+INFO:root:Extracted Weight from Qty for package 28: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002501, Package ID: 1A4071500002711000024083, Name: Edb Oral Admin - 10 - 10 - Strawberry Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Strawberry Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 29
+INFO:root:Extracted M Number: M00001006201, Length: 12
+INFO:root:Found Item Details for package 30: Brand: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 30: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate
+INFO:root:Extracted Strain for package 30: Not Specified
+INFO:root:Extracted Days for package 30: 1
+INFO:root:Extracted Weight from Qty for package 30: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001006201, Package ID: 1A4071500002711000024084, Name: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 31
+INFO:root:Extracted M Number: M00000962401, Length: 12
+INFO:root:Found Item Details for package 32: Brand: Oil for Vap - 10 - 35 - SNZBY Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 32: Oil for Vap - 10 - 35 - SNZBY Distillate Cart
+INFO:root:Extracted Strain for package 32: Not Specified
+INFO:root:Extracted Days for package 32: 1
+INFO:root:Extracted Weight from Qty for package 32: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000962401, Package ID: 1A4071500002711000024085, Name: Oil for Vap - 10 - 35 - SNZBY Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 35 - SNZBY Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+WARNING:root:No M Number found for package 33
+INFO:root:Extracted M Number: M00000919009, Length: 12
+INFO:root:Found Item Details for package 34: Strain: Citron B | Brand: Plant Mat - Hybrid - 21.5 - Citron B - Smalls - 2.83g | THC: 21.5% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 34: Citron B
+INFO:root:Extracted Strain for package 34: Hybrid
+INFO:root:Extracted Days for package 34: 1
+INFO:root:Extracted Weight for package 34: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000919009, Package ID: 1A4071500002711000024086, Name: Citron B, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Citron B | Brand: Plant Mat - Hybrid - 21.5 - Citron B - Smalls - 2.83g | THC: 21.5% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 35
+INFO:root:Extracted M Number: M00000917604, Length: 12
+INFO:root:Found Item Details for package 36: Strain: Orange Creamsicle | Brand: Plant Mat - Hybrid - 23 - Orange Creamsicle - 2.83g | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 36: Orange Creamsicle
+INFO:root:Extracted Strain for package 36: Hybrid
+INFO:root:Extracted Days for package 36: 1
+INFO:root:Extracted Weight for package 36: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000917604, Package ID: 1A4071500002711000024087, Name: Orange Creamsicle, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Orange Creamsicle | Brand: Plant Mat - Hybrid - 23 - Orange Creamsicle - 2.83g | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 37
+INFO:root:Extracted M Number: M00000929705, Length: 12
+INFO:root:Found Item Details for package 38: Strain: Ice Cream Cake | Brand: Plant Mat - Indica - 22.3 - Ice Cream Cake - 2.83g | THC: 22.3% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 38: Ice Cream Cake
+INFO:root:Extracted Strain for package 38: Indica
+INFO:root:Extracted Days for package 38: 1
+INFO:root:Extracted Weight for package 38: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000929705, Package ID: 1A4071500002711000024088, Name: Ice Cream Cake, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Ice Cream Cake | Brand: Plant Mat - Indica - 22.3 - Ice Cream Cake - 2.83g | THC: 22.3% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 39
+INFO:root:Extracted M Number: M00000934401, Length: 12
+INFO:root:Found Item Details for package 40: Strain: Sugar Cake | Brand: Plant Mat - Indica - 21.6 - Sugar Cake - Smalls - 2.83g | THC: 21.6% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 6 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted Name for package 40: Sugar Cake
+INFO:root:Extracted Strain for package 40: Indica
+INFO:root:Extracted Days for package 40: 1
+INFO:root:Extracted Weight for package 40: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000934401, Package ID: 1A4071500002711000024089, Name: Sugar Cake, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Sugar Cake | Brand: Plant Mat - Indica - 21.6 - Sugar Cake - Smalls - 2.83g | THC: 21.6% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 6 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Total packages processed: 40
+INFO:root:Total M Numbers extracted: 24
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 07:13:45] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 2
+INFO:root:Found 40 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00000703301, Length: 12
+INFO:root:Found Item Details for package 2: Strain: Runtz Berries | Brand: Plant Mat - Hybrid - 26.9 - Runtz Berries - A Buds | THC: 26.9% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted Name for package 2: Runtz Berries
+INFO:root:Extracted Strain for package 2: Hybrid
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight for package 2: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000703301, Package ID: 1A4071500002711000024066, Name: Runtz Berries, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Runtz Berries | Brand: Plant Mat - Hybrid - 26.9 - Runtz Berries - A Buds | THC: 26.9% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted M Number: M00001045314, Length: 12
+INFO:root:Found Item Details for package 3: Strain: Sherb Envy | Brand: Plant Mat - Indica - 23.4 - Sherb Envy - 14.15g | THC: 23.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 3: Sherb Envy
+INFO:root:Extracted Strain for package 3: Indica
+INFO:root:Extracted Days for package 3: 5
+INFO:root:Extracted Weight for package 3: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001045314, Package ID: 1A4071500002711000024067, Name: Sherb Envy, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Sherb Envy | Brand: Plant Mat - Indica - 23.4 - Sherb Envy - 14.15g | THC: 23.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00000917506, Length: 12
+INFO:root:Found Item Details for package 4: Strain: Sugar Cake | Brand: Plant Mat - Indica - 24.4 - Sugar Cake - 14.15g | THC: 24.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 4: Sugar Cake
+INFO:root:Extracted Strain for package 4: Indica
+INFO:root:Extracted Days for package 4: 5
+INFO:root:Extracted Weight for package 4: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00000917506, Package ID: 1A4071500002711000024068, Name: Sugar Cake, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Sugar Cake | Brand: Plant Mat - Indica - 24.4 - Sugar Cake - 14.15g | THC: 24.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001025705, Length: 12
+INFO:root:Found Item Details for package 5: Strain: Super Dawg OG | Brand: Plant Mat - Hybrid - 22.4 - Super Dawg OG - 14.15g | THC: 22.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 5: Super Dawg OG
+INFO:root:Extracted Strain for package 5: Hybrid
+INFO:root:Extracted Days for package 5: 5
+INFO:root:Extracted Weight for package 5: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001025705, Package ID: 1A4071500002711000024069, Name: Super Dawg OG, Strain: Hybrid, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Super Dawg OG | Brand: Plant Mat - Hybrid - 22.4 - Super Dawg OG - 14.15g | THC: 22.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001019907, Length: 12
+INFO:root:Found Item Details for package 6: Strain: The Soap | Brand: Plant Mat - Hybrid - 24.5 - The Soap - 14.15g | THC: 24.5% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 6: The Soap
+INFO:root:Extracted Strain for package 6: Hybrid
+INFO:root:Extracted Days for package 6: 5
+INFO:root:Extracted Weight for package 6: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001019907, Package ID: 1A4071500002711000024070, Name: The Soap, Strain: Hybrid, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: The Soap | Brand: Plant Mat - Hybrid - 24.5 - The Soap - 14.15g | THC: 24.5% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00000787319, Length: 12
+INFO:root:Found Item Details for package 7: Brand: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 7: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink
+INFO:root:Extracted Strain for package 7: Not Specified
+INFO:root:Extracted Days for package 7: 1
+INFO:root:Extracted Weight from Qty for package 7: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000787319, Package ID: 1A4071500002711000024071, Name: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000783001, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink
+INFO:root:Extracted Strain for package 8: Not Specified
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000783001, Package ID: 1A4071500002711000024072, Name: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000349814, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Oil for Vap - 10 - 35 - OG Kush Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 9: Oil for Vap - 10 - 35 - OG Kush Distillate Cart
+INFO:root:Extracted Strain for package 9: Not Specified
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000349814, Package ID: 1A4071500002711000024073, Name: Oil for Vap - 10 - 35 - OG Kush Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 35 - OG Kush Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00000972607, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Oil for Vap - 10 - 59 - RB CRM Distillate Cart | THC: 70% | THC: 588 mg | Wgt: 840 mg | Serving: one - 8 second inhale =
+14.24mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 10: Oil for Vap - 10 - 59 - RB CRM Distillate Cart
+INFO:root:Extracted Strain for package 10: Not Specified
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000972607, Package ID: 1A4071500002711000024074, Name: Oil for Vap - 10 - 59 - RB CRM Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 59 - RB CRM Distillate Cart | THC: 70% | THC: 588 mg | Wgt: 840 mg | Serving: one - 8 second inhale =
+14.24mg | Supply: 1 day(s) | Qty: 590 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00000890901, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN
+INFO:root:Extracted Strain for package 12: Not Specified
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000890901, Package ID: 1A4071500002711000024075, Name: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001006307, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 20 mg | Wgt: 12.4 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN
+INFO:root:Extracted Strain for package 14: Not Specified
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001006307, Package ID: 1A4071500002711000024076, Name: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 20 mg | Wgt: 12.4 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00001002401, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Edb Oral Admin - 10 - 10 - Chocolate Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 16: Edb Oral Admin - 10 - 10 - Chocolate Syrup
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 1
+INFO:root:Extracted Weight from Qty for package 16: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002401, Package ID: 1A4071500002711000024077, Name: Edb Oral Admin - 10 - 10 - Chocolate Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Chocolate Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000886001, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1
+- Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 18: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 1
+INFO:root:Extracted Weight from Qty for package 18: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000886001, Package ID: 1A4071500002711000024078, Name: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1
+- Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 19
+INFO:root:Extracted M Number: M00001002510, Length: 12
+INFO:root:Found Item Details for package 20: Brand: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1
+Dose 10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 20: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate
+INFO:root:Extracted Strain for package 20: Not Specified
+INFO:root:Extracted Days for package 20: 1
+INFO:root:Extracted Weight from Qty for package 20: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002510, Package ID: 1A4071500002711000024079, Name: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1
+Dose 10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 21
+INFO:root:Extracted M Number: M00000900506, Length: 12
+INFO:root:Found Item Details for package 22: Brand: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1 -
+Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 22: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG
+INFO:root:Extracted Strain for package 22: Not Specified
+INFO:root:Extracted Days for package 22: 1
+INFO:root:Extracted Weight from Qty for package 22: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000900506, Package ID: 1A4071500002711000024080, Name: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1 -
+Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 23
+INFO:root:Extracted M Number: M00001002613, Length: 12
+INFO:root:Found Item Details for package 24: Brand: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 24: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate
+INFO:root:Extracted Strain for package 24: Not Specified
+INFO:root:Extracted Days for package 24: 1
+INFO:root:Extracted Weight from Qty for package 24: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002613, Package ID: 1A4071500002711000024081, Name: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 25
+INFO:root:Extracted M Number: M00001002502, Length: 12
+INFO:root:Found Item Details for package 26: Brand: Edb oral admin - 10 - 10 - Salted Caramel Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 26: Edb oral admin - 10 - 10 - Salted Caramel Syrup
+INFO:root:Extracted Strain for package 26: Not Specified
+INFO:root:Extracted Days for package 26: 1
+INFO:root:Extracted Weight from Qty for package 26: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002502, Package ID: 1A4071500002711000024082, Name: Edb oral admin - 10 - 10 - Salted Caramel Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 10 - Salted Caramel Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 27
+INFO:root:Extracted M Number: M00001002501, Length: 12
+INFO:root:Found Item Details for package 28: Brand: Edb Oral Admin - 10 - 10 - Strawberry Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 28: Edb Oral Admin - 10 - 10 - Strawberry Syrup
+INFO:root:Extracted Strain for package 28: Not Specified
+INFO:root:Extracted Days for package 28: 1
+INFO:root:Extracted Weight from Qty for package 28: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002501, Package ID: 1A4071500002711000024083, Name: Edb Oral Admin - 10 - 10 - Strawberry Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Strawberry Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 29
+INFO:root:Extracted M Number: M00001006201, Length: 12
+INFO:root:Found Item Details for package 30: Brand: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 30: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate
+INFO:root:Extracted Strain for package 30: Not Specified
+INFO:root:Extracted Days for package 30: 1
+INFO:root:Extracted Weight from Qty for package 30: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001006201, Package ID: 1A4071500002711000024084, Name: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 31
+INFO:root:Extracted M Number: M00000962401, Length: 12
+INFO:root:Found Item Details for package 32: Brand: Oil for Vap - 10 - 35 - SNZBY Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 32: Oil for Vap - 10 - 35 - SNZBY Distillate Cart
+INFO:root:Extracted Strain for package 32: Not Specified
+INFO:root:Extracted Days for package 32: 1
+INFO:root:Extracted Weight from Qty for package 32: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000962401, Package ID: 1A4071500002711000024085, Name: Oil for Vap - 10 - 35 - SNZBY Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 35 - SNZBY Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+WARNING:root:No M Number found for package 33
+INFO:root:Extracted M Number: M00000919009, Length: 12
+INFO:root:Found Item Details for package 34: Strain: Citron B | Brand: Plant Mat - Hybrid - 21.5 - Citron B - Smalls - 2.83g | THC: 21.5% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 34: Citron B
+INFO:root:Extracted Strain for package 34: Hybrid
+INFO:root:Extracted Days for package 34: 1
+INFO:root:Extracted Weight for package 34: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000919009, Package ID: 1A4071500002711000024086, Name: Citron B, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Citron B | Brand: Plant Mat - Hybrid - 21.5 - Citron B - Smalls - 2.83g | THC: 21.5% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 35
+INFO:root:Extracted M Number: M00000917604, Length: 12
+INFO:root:Found Item Details for package 36: Strain: Orange Creamsicle | Brand: Plant Mat - Hybrid - 23 - Orange Creamsicle - 2.83g | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 36: Orange Creamsicle
+INFO:root:Extracted Strain for package 36: Hybrid
+INFO:root:Extracted Days for package 36: 1
+INFO:root:Extracted Weight for package 36: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000917604, Package ID: 1A4071500002711000024087, Name: Orange Creamsicle, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Orange Creamsicle | Brand: Plant Mat - Hybrid - 23 - Orange Creamsicle - 2.83g | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 37
+INFO:root:Extracted M Number: M00000929705, Length: 12
+INFO:root:Found Item Details for package 38: Strain: Ice Cream Cake | Brand: Plant Mat - Indica - 22.3 - Ice Cream Cake - 2.83g | THC: 22.3% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 38: Ice Cream Cake
+INFO:root:Extracted Strain for package 38: Indica
+INFO:root:Extracted Days for package 38: 1
+INFO:root:Extracted Weight for package 38: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000929705, Package ID: 1A4071500002711000024088, Name: Ice Cream Cake, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Ice Cream Cake | Brand: Plant Mat - Indica - 22.3 - Ice Cream Cake - 2.83g | THC: 22.3% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 39
+INFO:root:Extracted M Number: M00000934401, Length: 12
+INFO:root:Found Item Details for package 40: Strain: Sugar Cake | Brand: Plant Mat - Indica - 21.6 - Sugar Cake - Smalls - 2.83g | THC: 21.6% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 6 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted Name for package 40: Sugar Cake
+INFO:root:Extracted Strain for package 40: Indica
+INFO:root:Extracted Days for package 40: 1
+INFO:root:Extracted Weight for package 40: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000934401, Package ID: 1A4071500002711000024089, Name: Sugar Cake, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Sugar Cake | Brand: Plant Mat - Indica - 21.6 - Sugar Cake - Smalls - 2.83g | THC: 21.6% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 6 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Total packages processed: 40
+INFO:root:Total M Numbers extracted: 24
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 07:22:51] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 1
+INFO:root:Found 18 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00001139104, Length: 12
+INFO:root:Found Item Details for package 2: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 2: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express
+INFO:root:Extracted Strain for package 2: Not Specified
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight from Qty for package 2: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001139104, Package ID: Unknown, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001149107, Length: 12
+INFO:root:Found Item Details for package 3: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 3: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough
+INFO:root:Extracted Strain for package 3: Not Specified
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight from Qty for package 3: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001149107, Package ID: Unknown, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001176716, Length: 12
+INFO:root:Found Item Details for package 4: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 4: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky
+INFO:root:Extracted Strain for package 4: Not Specified
+INFO:root:Extracted Days for package 4: 2
+INFO:root:Extracted Weight from Qty for package 4: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00001176716, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted M Number: M00000499806, Length: 12
+INFO:root:Found Item Details for package 5: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted Name for package 5: Lot Top Admin - 10.35 - Balm - 1:1
+INFO:root:Extracted Strain for package 5: Not Specified
+INFO:root:Extracted Days for package 5: 1
+INFO:root:Extracted Weight from Qty for package 5: 295 mg, Category: Unspecified
+INFO:root:Found M Number: M00000499806, Package ID: Unknown, Name: Lot Top Admin - 10.35 - Balm - 1:1, Strain: Not Specified, Days: 1, Weight: 295 mg, Category: Unspecified, Item Details: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted M Number: M00000812101, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 6: Oil or Sol Vap - 34.7 - RSO - Fresh Powder
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 1
+INFO:root:Extracted Weight from Qty for package 6: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000812101, Package ID: Unknown, Name: Oil or Sol Vap - 34.7 - RSO - Fresh Powder, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001185105, Length: 12
+INFO:root:Found Item Details for package 7: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted Name for package 7: B52 Bomber
+INFO:root:Extracted Strain for package 7: Sativa
+INFO:root:Extracted Days for package 7: 2
+INFO:root:Extracted Weight for package 7: 5.66 g, Category: Flower
+INFO:root:Found M Number: M00001185105, Package ID: Unknown, Name: B52 Bomber, Strain: Sativa, Days: 2, Weight: 5.66 g, Category: Flower, Item Details: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted M Number: M00000496813, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 8: Indica
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000496813, Package ID: Unknown, Name: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000348801, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 9: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 9: Indica
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000348801, Package ID: Unknown, Name: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000446104, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 10: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica
+INFO:root:Extracted Strain for package 10: Indica
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000446104, Package ID: Unknown, Name: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00001172833, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO
+INFO:root:Extracted Strain for package 12: Indica
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172833, Package ID: Unknown, Name: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001172519, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO
+INFO:root:Extracted Strain for package 14: Sativa
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172519, Package ID: Unknown, Name: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO, Strain: Sativa, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00000912504, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 16: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 2
+INFO:root:Extracted Weight from Qty for package 16: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912504, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000912607, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 18: Oil or Sol Vap - 10.51 - Vape - Blue Raz
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 2
+INFO:root:Extracted Weight from Qty for package 18: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912607, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - Vape - Blue Raz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Total packages processed: 18
+INFO:root:Total M Numbers extracted: 13
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 07:53:47] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 2
+INFO:root:Found 40 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00000703301, Length: 12
+INFO:root:Found Item Details for package 2: Strain: Runtz Berries | Brand: Plant Mat - Hybrid - 26.9 - Runtz Berries - A Buds | THC: 26.9% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted Name for package 2: Runtz Berries
+INFO:root:Extracted Strain for package 2: Hybrid
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight for package 2: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000703301, Package ID: 1A4071500002711000024066, Name: Runtz Berries, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Runtz Berries | Brand: Plant Mat - Hybrid - 26.9 - Runtz Berries - A Buds | THC: 26.9% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted M Number: M00001045314, Length: 12
+INFO:root:Found Item Details for package 3: Strain: Sherb Envy | Brand: Plant Mat - Indica - 23.4 - Sherb Envy - 14.15g | THC: 23.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 3: Sherb Envy
+INFO:root:Extracted Strain for package 3: Indica
+INFO:root:Extracted Days for package 3: 5
+INFO:root:Extracted Weight for package 3: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001045314, Package ID: 1A4071500002711000024067, Name: Sherb Envy, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Sherb Envy | Brand: Plant Mat - Indica - 23.4 - Sherb Envy - 14.15g | THC: 23.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00000917506, Length: 12
+INFO:root:Found Item Details for package 4: Strain: Sugar Cake | Brand: Plant Mat - Indica - 24.4 - Sugar Cake - 14.15g | THC: 24.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 4: Sugar Cake
+INFO:root:Extracted Strain for package 4: Indica
+INFO:root:Extracted Days for package 4: 5
+INFO:root:Extracted Weight for package 4: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00000917506, Package ID: 1A4071500002711000024068, Name: Sugar Cake, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Sugar Cake | Brand: Plant Mat - Indica - 24.4 - Sugar Cake - 14.15g | THC: 24.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001025705, Length: 12
+INFO:root:Found Item Details for package 5: Strain: Super Dawg OG | Brand: Plant Mat - Hybrid - 22.4 - Super Dawg OG - 14.15g | THC: 22.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 5: Super Dawg OG
+INFO:root:Extracted Strain for package 5: Hybrid
+INFO:root:Extracted Days for package 5: 5
+INFO:root:Extracted Weight for package 5: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001025705, Package ID: 1A4071500002711000024069, Name: Super Dawg OG, Strain: Hybrid, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Super Dawg OG | Brand: Plant Mat - Hybrid - 22.4 - Super Dawg OG - 14.15g | THC: 22.4% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001019907, Length: 12
+INFO:root:Found Item Details for package 6: Strain: The Soap | Brand: Plant Mat - Hybrid - 24.5 - The Soap - 14.15g | THC: 24.5% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 6: The Soap
+INFO:root:Extracted Strain for package 6: Hybrid
+INFO:root:Extracted Days for package 6: 5
+INFO:root:Extracted Weight for package 6: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001019907, Package ID: 1A4071500002711000024070, Name: The Soap, Strain: Hybrid, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: The Soap | Brand: Plant Mat - Hybrid - 24.5 - The Soap - 14.15g | THC: 24.5% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00000787319, Length: 12
+INFO:root:Found Item Details for package 7: Brand: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 7: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink
+INFO:root:Extracted Strain for package 7: Not Specified
+INFO:root:Extracted Days for package 7: 1
+INFO:root:Extracted Weight from Qty for package 7: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000787319, Package ID: 1A4071500002711000024071, Name: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Blue Raspberry Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000783001, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink
+INFO:root:Extracted Strain for package 8: Not Specified
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000783001, Package ID: 1A4071500002711000024072, Name: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Pink Lemonade Drink | THC: 0.05% | THC: 100 mg | Wgt: 210 g | Serving: 3 capfuls = 21g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000349814, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Oil for Vap - 10 - 35 - OG Kush Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 9: Oil for Vap - 10 - 35 - OG Kush Distillate Cart
+INFO:root:Extracted Strain for package 9: Not Specified
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000349814, Package ID: 1A4071500002711000024073, Name: Oil for Vap - 10 - 35 - OG Kush Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 35 - OG Kush Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00000972607, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Oil for Vap - 10 - 59 - RB CRM Distillate Cart | THC: 70% | THC: 588 mg | Wgt: 840 mg | Serving: one - 8 second inhale =
+14.24mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 10: Oil for Vap - 10 - 59 - RB CRM Distillate Cart
+INFO:root:Extracted Strain for package 10: Not Specified
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000972607, Package ID: 1A4071500002711000024074, Name: Oil for Vap - 10 - 59 - RB CRM Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 59 - RB CRM Distillate Cart | THC: 70% | THC: 588 mg | Wgt: 840 mg | Serving: one - 8 second inhale =
+14.24mg | Supply: 1 day(s) | Qty: 590 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00000890901, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN
+INFO:root:Extracted Strain for package 12: Not Specified
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000890901, Package ID: 1A4071500002711000024075, Name: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001006307, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 20 mg | Wgt: 12.4 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN
+INFO:root:Extracted Strain for package 14: Not Specified
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001006307, Package ID: 1A4071500002711000024076, Name: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 2 - Blueberry Lemonade Gummies Nano with CBN | THC: 0.16% | THC: 20 mg | Wgt: 12.4 g |
+Serving: 1 - Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00001002401, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Edb Oral Admin - 10 - 10 - Chocolate Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 16: Edb Oral Admin - 10 - 10 - Chocolate Syrup
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 1
+INFO:root:Extracted Weight from Qty for package 16: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002401, Package ID: 1A4071500002711000024077, Name: Edb Oral Admin - 10 - 10 - Chocolate Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Chocolate Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000886001, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1
+- Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 18: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 1
+INFO:root:Extracted Weight from Qty for package 18: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000886001, Package ID: 1A4071500002711000024078, Name: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Citrus Blossom Gummies Nano with CBC | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1
+- Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 19
+INFO:root:Extracted M Number: M00001002510, Length: 12
+INFO:root:Found Item Details for package 20: Brand: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1
+Dose 10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 20: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate
+INFO:root:Extracted Strain for package 20: Not Specified
+INFO:root:Extracted Days for package 20: 1
+INFO:root:Extracted Weight from Qty for package 20: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002510, Package ID: 1A4071500002711000024079, Name: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 1 - Cookies and Cream Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1
+Dose 10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 21
+INFO:root:Extracted M Number: M00000900506, Length: 12
+INFO:root:Found Item Details for package 22: Brand: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1 -
+Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 22: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG
+INFO:root:Extracted Strain for package 22: Not Specified
+INFO:root:Extracted Days for package 22: 1
+INFO:root:Extracted Weight from Qty for package 22: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000900506, Package ID: 1A4071500002711000024080, Name: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 11 - Lemon Creme Gummies Nano with CBG | THC: 0.16% | THC: 110 mg | Wgt: 68.2 g | Serving: 1 -
+Gummy = 6.2g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 23
+INFO:root:Extracted M Number: M00001002613, Length: 12
+INFO:root:Found Item Details for package 24: Brand: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 24: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate
+INFO:root:Extracted Strain for package 24: Not Specified
+INFO:root:Extracted Days for package 24: 1
+INFO:root:Extracted Weight from Qty for package 24: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002613, Package ID: 1A4071500002711000024081, Name: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 1 - Rainbow Crunch Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 25
+INFO:root:Extracted M Number: M00001002502, Length: 12
+INFO:root:Found Item Details for package 26: Brand: Edb oral admin - 10 - 10 - Salted Caramel Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 26: Edb oral admin - 10 - 10 - Salted Caramel Syrup
+INFO:root:Extracted Strain for package 26: Not Specified
+INFO:root:Extracted Days for package 26: 1
+INFO:root:Extracted Weight from Qty for package 26: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002502, Package ID: 1A4071500002711000024082, Name: Edb oral admin - 10 - 10 - Salted Caramel Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 10 - Salted Caramel Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 27
+INFO:root:Extracted M Number: M00001002501, Length: 12
+INFO:root:Found Item Details for package 28: Brand: Edb Oral Admin - 10 - 10 - Strawberry Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 28: Edb Oral Admin - 10 - 10 - Strawberry Syrup
+INFO:root:Extracted Strain for package 28: Not Specified
+INFO:root:Extracted Days for package 28: 1
+INFO:root:Extracted Weight from Qty for package 28: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001002501, Package ID: 1A4071500002711000024083, Name: Edb Oral Admin - 10 - 10 - Strawberry Syrup, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - 10 - Strawberry Syrup | THC: 0.07% | THC: 100 mg | Wgt: 140,000 mg | Serving: 1 dose = 14mL |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 29
+INFO:root:Extracted M Number: M00001006201, Length: 12
+INFO:root:Found Item Details for package 30: Brand: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 30: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate
+INFO:root:Extracted Strain for package 30: Not Specified
+INFO:root:Extracted Days for package 30: 1
+INFO:root:Extracted Weight from Qty for package 30: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001006201, Package ID: 1A4071500002711000024084, Name: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb oral admin - 10 - 1 - Sugar Free Milk Chocolate | THC: 0.1% | THC: 10 mg | Wgt: 10 g | Serving: 1 - Square = 1 Dose
+10g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 31
+INFO:root:Extracted M Number: M00000962401, Length: 12
+INFO:root:Found Item Details for package 32: Brand: Oil for Vap - 10 - 35 - SNZBY Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 32: Oil for Vap - 10 - 35 - SNZBY Distillate Cart
+INFO:root:Extracted Strain for package 32: Not Specified
+INFO:root:Extracted Days for package 32: 1
+INFO:root:Extracted Weight from Qty for package 32: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000962401, Package ID: 1A4071500002711000024085, Name: Oil for Vap - 10 - 35 - SNZBY Distillate Cart, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil for Vap - 10 - 35 - SNZBY Distillate Cart | THC: 70% | THC: 350 mg | Wgt: 500 mg | Serving: one - 8 second inhale =
+14.29mg | Supply: 1 day(s) | Qty: 590 mg
+WARNING:root:No M Number found for package 33
+INFO:root:Extracted M Number: M00000919009, Length: 12
+INFO:root:Found Item Details for package 34: Strain: Citron B | Brand: Plant Mat - Hybrid - 21.5 - Citron B - Smalls - 2.83g | THC: 21.5% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 34: Citron B
+INFO:root:Extracted Strain for package 34: Hybrid
+INFO:root:Extracted Days for package 34: 1
+INFO:root:Extracted Weight for package 34: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000919009, Package ID: 1A4071500002711000024086, Name: Citron B, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Citron B | Brand: Plant Mat - Hybrid - 21.5 - Citron B - Smalls - 2.83g | THC: 21.5% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 35
+INFO:root:Extracted M Number: M00000917604, Length: 12
+INFO:root:Found Item Details for package 36: Strain: Orange Creamsicle | Brand: Plant Mat - Hybrid - 23 - Orange Creamsicle - 2.83g | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 36: Orange Creamsicle
+INFO:root:Extracted Strain for package 36: Hybrid
+INFO:root:Extracted Days for package 36: 1
+INFO:root:Extracted Weight for package 36: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000917604, Package ID: 1A4071500002711000024087, Name: Orange Creamsicle, Strain: Hybrid, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Orange Creamsicle | Brand: Plant Mat - Hybrid - 23 - Orange Creamsicle - 2.83g | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 37
+INFO:root:Extracted M Number: M00000929705, Length: 12
+INFO:root:Found Item Details for package 38: Strain: Ice Cream Cake | Brand: Plant Mat - Indica - 22.3 - Ice Cream Cake - 2.83g | THC: 22.3% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 38: Ice Cream Cake
+INFO:root:Extracted Strain for package 38: Indica
+INFO:root:Extracted Days for package 38: 1
+INFO:root:Extracted Weight for package 38: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000929705, Package ID: 1A4071500002711000024088, Name: Ice Cream Cake, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Ice Cream Cake | Brand: Plant Mat - Indica - 22.3 - Ice Cream Cake - 2.83g | THC: 22.3% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 39
+INFO:root:Extracted M Number: M00000934401, Length: 12
+INFO:root:Found Item Details for package 40: Strain: Sugar Cake | Brand: Plant Mat - Indica - 21.6 - Sugar Cake - Smalls - 2.83g | THC: 21.6% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 6 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Extracted Name for package 40: Sugar Cake
+INFO:root:Extracted Strain for package 40: Indica
+INFO:root:Extracted Days for package 40: 1
+INFO:root:Extracted Weight for package 40: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000934401, Package ID: 1A4071500002711000024089, Name: Sugar Cake, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Sugar Cake | Brand: Plant Mat - Indica - 21.6 - Sugar Cake - Smalls - 2.83g | THC: 21.6% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+10/16/2024 5:04:34 PM -04:00 Page 6 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. 0001117232 Date Created 10/15/2024 2:46 PM
+INFO:root:Total packages processed: 40
+INFO:root:Total M Numbers extracted: 24
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 07:56:23] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 1
+INFO:root:Found 18 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00001139104, Length: 12
+INFO:root:Found Item Details for package 2: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 2: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express
+INFO:root:Extracted Strain for package 2: Not Specified
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight from Qty for package 2: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001139104, Package ID: Unknown, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001149107, Length: 12
+INFO:root:Found Item Details for package 3: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 3: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough
+INFO:root:Extracted Strain for package 3: Not Specified
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight from Qty for package 3: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001149107, Package ID: Unknown, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001176716, Length: 12
+INFO:root:Found Item Details for package 4: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 4: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky
+INFO:root:Extracted Strain for package 4: Not Specified
+INFO:root:Extracted Days for package 4: 2
+INFO:root:Extracted Weight from Qty for package 4: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00001176716, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted M Number: M00000499806, Length: 12
+INFO:root:Found Item Details for package 5: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted Name for package 5: Lot Top Admin - 10.35 - Balm - 1:1
+INFO:root:Extracted Strain for package 5: Not Specified
+INFO:root:Extracted Days for package 5: 1
+INFO:root:Extracted Weight from Qty for package 5: 295 mg, Category: Unspecified
+INFO:root:Found M Number: M00000499806, Package ID: Unknown, Name: Lot Top Admin - 10.35 - Balm - 1:1, Strain: Not Specified, Days: 1, Weight: 295 mg, Category: Unspecified, Item Details: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted M Number: M00000812101, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 6: Oil or Sol Vap - 34.7 - RSO - Fresh Powder
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 1
+INFO:root:Extracted Weight from Qty for package 6: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000812101, Package ID: Unknown, Name: Oil or Sol Vap - 34.7 - RSO - Fresh Powder, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001185105, Length: 12
+INFO:root:Found Item Details for package 7: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted Name for package 7: B52 Bomber
+INFO:root:Extracted Strain for package 7: Sativa
+INFO:root:Extracted Days for package 7: 2
+INFO:root:Extracted Weight for package 7: 5.66 g, Category: Flower
+INFO:root:Found M Number: M00001185105, Package ID: Unknown, Name: B52 Bomber, Strain: Sativa, Days: 2, Weight: 5.66 g, Category: Flower, Item Details: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted M Number: M00000496813, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 8: Indica
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000496813, Package ID: Unknown, Name: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000348801, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 9: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 9: Indica
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000348801, Package ID: Unknown, Name: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000446104, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 10: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica
+INFO:root:Extracted Strain for package 10: Indica
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000446104, Package ID: Unknown, Name: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00001172833, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO
+INFO:root:Extracted Strain for package 12: Indica
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172833, Package ID: Unknown, Name: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001172519, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO
+INFO:root:Extracted Strain for package 14: Sativa
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172519, Package ID: Unknown, Name: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO, Strain: Sativa, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00000912504, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 16: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 2
+INFO:root:Extracted Weight from Qty for package 16: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912504, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000912607, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 18: Oil or Sol Vap - 10.51 - Vape - Blue Raz
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 2
+INFO:root:Extracted Weight from Qty for package 18: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912607, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - Vape - Blue Raz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Total packages processed: 18
+INFO:root:Total M Numbers extracted: 13
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 07:57:27] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 1
+INFO:root:Found 36 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00001044501, Length: 12
+INFO:root:Found Item Details for package 2: Strain: Animal Tsunami | Brand: Plant Mat-Indica-23 Animal Tsunami | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 1 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+INFO:root:Extracted Name for package 2: Animal Tsunami
+INFO:root:Extracted Strain for package 2: Indica
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight for package 2: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00001044501, Package ID: Unknown, Name: Animal Tsunami, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Animal Tsunami | Brand: Plant Mat-Indica-23 Animal Tsunami | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 1 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+INFO:root:Extracted M Number: M00001086210, Length: 12
+INFO:root:Found Item Details for package 3: Strain: Berry Fondue | Brand: Plant Mat-Indica-23 Berry Fondue | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 3: Berry Fondue
+INFO:root:Extracted Strain for package 3: Indica
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight for package 3: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00001086210, Package ID: Unknown, Name: Berry Fondue, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Berry Fondue | Brand: Plant Mat-Indica-23 Berry Fondue | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted M Number: M00001150802, Length: 12
+INFO:root:Found Item Details for package 4: Strain: Permanent Marker x Cap Junk | Brand: Plant Mat-Indica-23 Permanent Marker x Cap Junk | THC: 23% | Wgt: 2.83 g |
+Supply: 1 day(s)
+INFO:root:Extracted Name for package 4: Permanent Marker x Cap Junk
+INFO:root:Extracted Strain for package 4: Indica
+INFO:root:Extracted Days for package 4: 1
+INFO:root:Extracted Weight for package 4: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00001150802, Package ID: Unknown, Name: Permanent Marker x Cap Junk, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Permanent Marker x Cap Junk | Brand: Plant Mat-Indica-23 Permanent Marker x Cap Junk | THC: 23% | Wgt: 2.83 g |
+Supply: 1 day(s)
+INFO:root:Extracted M Number: M00001086503, Length: 12
+INFO:root:Found Item Details for package 5: Strain: Berry Fondue | Brand: Plant Mat-Indica-23 Berry Fondue | THC: 23% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted Name for package 5: Berry Fondue
+INFO:root:Extracted Strain for package 5: Indica
+INFO:root:Extracted Days for package 5: 5
+INFO:root:Extracted Weight for package 5: 14.15 g, Category: Flower
+INFO:root:Found M Number: M00001086503, Package ID: Unknown, Name: Berry Fondue, Strain: Indica, Days: 5, Weight: 14.15 g, Category: Flower, Item Details: Strain: Berry Fondue | Brand: Plant Mat-Indica-23 Berry Fondue | THC: 23% | Wgt: 14.15 g | Supply: 5 day(s)
+INFO:root:Extracted M Number: M00001035009, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Oil Vap-3.5 Golden Pineapple Cart (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 6: Oil Vap-3.5 Golden Pineapple Cart (Distillate)
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 2
+INFO:root:Extracted Weight from Qty for package 6: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001035009, Package ID: 1A4070300001069000014370, Name: Oil Vap-3.5 Golden Pineapple Cart (Distillate), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Golden Pineapple Cart (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted M Number: M00001155405, Length: 12
+INFO:root:Found Item Details for package 7: Brand: Oil Vap-3.5 ICC Cart (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second inhale |
+Supply: 2 day(s) | Qty: 1,180 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+INFO:root:Extracted Name for package 7: Oil Vap-3.5 ICC Cart (Distillate)
+INFO:root:Extracted Strain for package 7: Not Specified
+INFO:root:Extracted Days for package 7: 2
+INFO:root:Extracted Weight from Qty for package 7: 1,180 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM, Category: Unspecified
+INFO:root:Found M Number: M00001155405, Package ID: 1A4070300001069000014371, Name: Oil Vap-3.5 ICC Cart (Distillate), Strain: Not Specified, Days: 2, Weight: 1,180 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 ICC Cart (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second inhale |
+Supply: 2 day(s) | Qty: 1,180 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 2 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+INFO:root:Extracted M Number: M00001096101, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Oil Vap-3.5 Strawberry Bubbles Cart (Distillate) | THC: 69.3% | THC: 693 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten
+second inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 8: Oil Vap-3.5 Strawberry Bubbles Cart (Distillate)
+INFO:root:Extracted Strain for package 8: Not Specified
+INFO:root:Extracted Days for package 8: 2
+INFO:root:Extracted Weight from Qty for package 8: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001096101, Package ID: 1A4070300001069000014372, Name: Oil Vap-3.5 Strawberry Bubbles Cart (Distillate), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Strawberry Bubbles Cart (Distillate) | THC: 69.3% | THC: 693 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten
+second inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted M Number: M00001189115, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Oil Vap-2.95 Animal Tsunami Cart (Live Resin) | THC: 59% | THC: 590 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 9: Oil Vap-2.95 Animal Tsunami Cart (Live Resin)
+INFO:root:Extracted Strain for package 9: Not Specified
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 590 mg, Category: Unspecified
+INFO:root:Found M Number: M00001189115, Package ID: 1A4070300001069000014373, Name: Oil Vap-2.95 Animal Tsunami Cart (Live Resin), Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Unspecified, Item Details: Brand: Oil Vap-2.95 Animal Tsunami Cart (Live Resin) | THC: 59% | THC: 590 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001171435, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Oil Vap-3.5 Glitter Bomb Cart (Live Resin) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 10: Oil Vap-3.5 Glitter Bomb Cart (Live Resin)
+INFO:root:Extracted Strain for package 10: Not Specified
+INFO:root:Extracted Days for package 10: 2
+INFO:root:Extracted Weight from Qty for package 10: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001171435, Package ID: 1A4070300001069000014374, Name: Oil Vap-3.5 Glitter Bomb Cart (Live Resin), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Glitter Bomb Cart (Live Resin) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00001176504, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Oil Vap-3.5 Permanent Marker x Cap Junk Cart (Live Resin) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg,
+1 ten second inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 12: Oil Vap-3.5 Permanent Marker x Cap Junk Cart (Live Resin)
+INFO:root:Extracted Strain for package 12: Not Specified
+INFO:root:Extracted Days for package 12: 2
+INFO:root:Extracted Weight from Qty for package 12: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001176504, Package ID: 1A4070300001069000014375, Name: Oil Vap-3.5 Permanent Marker x Cap Junk Cart (Live Resin), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Permanent Marker x Cap Junk Cart (Live Resin) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg,
+1 ten second inhale | Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001163401, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Sol Vap-7 Glitter Bomb Live Badder | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 small scoop = 10mg | Supply: 2 day(s)
+| Qty: 1,180 mg
+INFO:root:Extracted Name for package 14: Sol Vap-7 Glitter Bomb Live Badder
+INFO:root:Extracted Strain for package 14: Not Specified
+INFO:root:Extracted Days for package 14: 2
+INFO:root:Extracted Weight from Qty for package 14: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001163401, Package ID: 1A4070300001069000014376, Name: Sol Vap-7 Glitter Bomb Live Badder, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Sol Vap-7 Glitter Bomb Live Badder | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 small scoop = 10mg | Supply: 2 day(s)
+| Qty: 1,180 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00000857108, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Edb Oral Admin-10 Peach Lemonade Gummies | THC: 0.22% | THC: 20 mg | Wgt: 9.08 g | Serving: 1 gummy = 4.54g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 16: Edb Oral Admin-10 Peach Lemonade Gummies
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 1
+INFO:root:Extracted Weight from Qty for package 16: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000857108, Package ID: 1A4070300001069000014377, Name: Edb Oral Admin-10 Peach Lemonade Gummies, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin-10 Peach Lemonade Gummies | THC: 0.22% | THC: 20 mg | Wgt: 9.08 g | Serving: 1 gummy = 4.54g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000982702, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Edb Oral Admin-10 Sour Blood Orange Gummies (Boost) | THC: 0.22% | THC: 20 mg | Wgt: 9.08 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 18: Edb Oral Admin-10 Sour Blood Orange Gummies (Boost)
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 1
+INFO:root:Extracted Weight from Qty for package 18: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000982702, Package ID: 1A4070300001069000014378, Name: Edb Oral Admin-10 Sour Blood Orange Gummies (Boost), Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin-10 Sour Blood Orange Gummies (Boost) | THC: 0.22% | THC: 20 mg | Wgt: 9.08 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 19
+INFO:root:Extracted M Number: M00000982601, Length: 12
+INFO:root:Found Item Details for package 20: Brand: Edb Oral Admin-10 Cherry Limeade Gummies (Sleep) | THC: 0.22% | THC: 100 mg | Wgt: 45.4 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 4 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+INFO:root:Extracted Name for package 20: Edb Oral Admin-10 Cherry Limeade Gummies (Sleep)
+INFO:root:Extracted Strain for package 20: Not Specified
+INFO:root:Extracted Days for package 20: 1
+INFO:root:Extracted Weight from Qty for package 20: 110 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 4 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM, Category: Edible
+INFO:root:Found M Number: M00000982601, Package ID: 1A4070300001069000014379, Name: Edb Oral Admin-10 Cherry Limeade Gummies (Sleep), Strain: Not Specified, Days: 1, Weight: 110 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 4 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM, Category: Edible, Item Details: Brand: Edb Oral Admin-10 Cherry Limeade Gummies (Sleep) | THC: 0.22% | THC: 100 mg | Wgt: 45.4 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 4 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+WARNING:root:No M Number found for package 21
+INFO:root:Extracted M Number: M00001001507, Length: 12
+INFO:root:Found Item Details for package 22: Brand: Edb Oral Admin-10 Peach Lemonade Gummies (Boost) | THC: 0.22% | THC: 100 mg | Wgt: 45.4 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 22: Edb Oral Admin-10 Peach Lemonade Gummies (Boost)
+INFO:root:Extracted Strain for package 22: Not Specified
+INFO:root:Extracted Days for package 22: 1
+INFO:root:Extracted Weight from Qty for package 22: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001001507, Package ID: 1A4070300001069000014380, Name: Edb Oral Admin-10 Peach Lemonade Gummies (Boost), Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin-10 Peach Lemonade Gummies (Boost) | THC: 0.22% | THC: 100 mg | Wgt: 45.4 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 23
+INFO:root:Extracted M Number: M00000823603, Length: 12
+INFO:root:Found Item Details for package 24: Brand: Edb Oral Admin-25 Mango Passionfruit Gummies SHO | THC: 0.55% | THC: 100 mg | Wgt: 18.16 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 24: Edb Oral Admin-25 Mango Passionfruit Gummies SHO
+INFO:root:Extracted Strain for package 24: Not Specified
+INFO:root:Extracted Days for package 24: 1
+INFO:root:Extracted Weight from Qty for package 24: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000823603, Package ID: 1A4070300001069000014381, Name: Edb Oral Admin-25 Mango Passionfruit Gummies SHO, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin-25 Mango Passionfruit Gummies SHO | THC: 0.55% | THC: 100 mg | Wgt: 18.16 g | Serving: 1 gummy =
+4.54g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 25
+INFO:root:Extracted M Number: M00001010302, Length: 12
+INFO:root:Found Item Details for package 26: Brand: Edb Oral Admin-40 Blue Raspberry Gummies | THC: 0.88% | THC: 400 mg | Wgt: 45.4 g | Serving: 1 gummy = 4.54g |
+Supply: 4 day(s) | Qty: 440 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 5 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+INFO:root:Extracted Name for package 26: Edb Oral Admin-40 Blue Raspberry Gummies
+INFO:root:Extracted Strain for package 26: Not Specified
+INFO:root:Extracted Days for package 26: 4
+INFO:root:Extracted Weight from Qty for package 26: 440 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 5 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM, Category: Edible
+INFO:root:Found M Number: M00001010302, Package ID: 1A4070300001069000014382, Name: Edb Oral Admin-40 Blue Raspberry Gummies, Strain: Not Specified, Days: 4, Weight: 440 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 5 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM, Category: Edible, Item Details: Brand: Edb Oral Admin-40 Blue Raspberry Gummies | THC: 0.88% | THC: 400 mg | Wgt: 45.4 g | Serving: 1 gummy = 4.54g |
+Supply: 4 day(s) | Qty: 440 mg
+Transfer Form (OH)
+4/13/2025 12:41:15 PM -04:00 Page 5 of 7 Metrc® Form rev. 2019-08.2
+METRC®
+MARIJUANA TRANSPORTATION MANIFEST
+All sales transactions are to be completed prior to transportation of any MARIJUANA. The receiving entity may
+reject product delivered, but amount delivered must be limited to amount agreed upon in prior sales transaction.
+Manifest No. Date Created 4/10/2025 1:53 PM
+WARNING:root:No M Number found for package 27
+INFO:root:Extracted M Number: M00000734202, Length: 12
+INFO:root:Found Item Details for package 28: Strain: Wedding Pie | Brand: Plant Mat-Sativa-23 Wedding Pie | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 28: Wedding Pie
+INFO:root:Extracted Strain for package 28: Sativa
+INFO:root:Extracted Days for package 28: 1
+INFO:root:Extracted Weight for package 28: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00000734202, Package ID: Unknown, Name: Wedding Pie, Strain: Sativa, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Wedding Pie | Brand: Plant Mat-Sativa-23 Wedding Pie | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 29
+INFO:root:Extracted M Number: M00001172509, Length: 12
+INFO:root:Found Item Details for package 30: Strain: Purple Cherry Cookies | Brand: Plant Mat-Indica-23 Purple Cherry Cookies | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+INFO:root:Extracted Name for package 30: Purple Cherry Cookies
+INFO:root:Extracted Strain for package 30: Indica
+INFO:root:Extracted Days for package 30: 1
+INFO:root:Extracted Weight for package 30: 2.83 g, Category: Flower
+INFO:root:Found M Number: M00001172509, Package ID: Unknown, Name: Purple Cherry Cookies, Strain: Indica, Days: 1, Weight: 2.83 g, Category: Flower, Item Details: Strain: Purple Cherry Cookies | Brand: Plant Mat-Indica-23 Purple Cherry Cookies | THC: 23% | Wgt: 2.83 g | Supply: 1 day(s)
+WARNING:root:No M Number found for package 31
+INFO:root:Extracted M Number: M00001131101, Length: 12
+INFO:root:Found Item Details for package 32: Brand: Oil Vap-3.5 Hot Cakes Cart (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second inhale |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 32: Oil Vap-3.5 Hot Cakes Cart (Distillate)
+INFO:root:Extracted Strain for package 32: Not Specified
+INFO:root:Extracted Days for package 32: 2
+INFO:root:Extracted Weight from Qty for package 32: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001131101, Package ID: 1A4070300001069000014383, Name: Oil Vap-3.5 Hot Cakes Cart (Distillate), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Hot Cakes Cart (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second inhale |
+Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 33
+INFO:root:Extracted M Number: M00001155507, Length: 12
+INFO:root:Found Item Details for package 34: Brand: Oil Vap-3.5 Hot Cakes Airgraft Pod (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 34: Oil Vap-3.5 Hot Cakes Airgraft Pod (Distillate)
+INFO:root:Extracted Strain for package 34: Not Specified
+INFO:root:Extracted Days for package 34: 2
+INFO:root:Extracted Weight from Qty for package 34: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001155507, Package ID: 1A4070300001069000014384, Name: Oil Vap-3.5 Hot Cakes Airgraft Pod (Distillate), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Hot Cakes Airgraft Pod (Distillate) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten second
+inhale | Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 35
+INFO:root:Extracted M Number: M00001171436, Length: 12
+INFO:root:Found Item Details for package 36: Brand: Oil Vap-3.5 Glitter Bomb Airgraft Pod (Live Resin) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten
+second inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 36: Oil Vap-3.5 Glitter Bomb Airgraft Pod (Live Resin)
+INFO:root:Extracted Strain for package 36: Not Specified
+INFO:root:Extracted Days for package 36: 2
+INFO:root:Extracted Weight from Qty for package 36: 1,180 mg, Category: Unspecified
+INFO:root:Found M Number: M00001171436, Package ID: 1A4070300001069000014385, Name: Oil Vap-3.5 Glitter Bomb Airgraft Pod (Live Resin), Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Unspecified, Item Details: Brand: Oil Vap-3.5 Glitter Bomb Airgraft Pod (Live Resin) | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 0.005g or 5mg, 1 ten
+second inhale | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Total packages processed: 36
+INFO:root:Total M Numbers extracted: 22
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 07:58:12] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-723-325
+INFO:root:Found package table header on page 2
+INFO:root:Found 10 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00000935506, Length: 12
+INFO:root:Found Item Details for package 2: Brand: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 2: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl
+INFO:root:Extracted Strain for package 2: Not Specified
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight from Qty for package 2: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935506, Package ID: 1A4070300001069000001312, Name: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000941608, Length: 12
+INFO:root:Found Item Details for package 3: Brand: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl | THC: 0.28% | THC: 25 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 3: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl
+INFO:root:Extracted Strain for package 3: Not Specified
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight from Qty for package 3: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000941608, Package ID: 1A4070300001069000001313, Name: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl | THC: 0.28% | THC: 25 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000935305, Length: 12
+INFO:root:Found Item Details for package 4: Brand: Edb Oral Admin - 10 - Tangelo Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1 day
+(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 4: Edb Oral Admin - 10 - Tangelo Gummy Pearl
+INFO:root:Extracted Strain for package 4: Not Specified
+WARNING:root:Days not found for package 4 in Item Details: Brand: Edb Oral Admin - 10 - Tangelo Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1 day
+(s) | Qty: 110 mg
+INFO:root:Extracted Weight from Qty for package 4: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935305, Package ID: 1A4070300001069000001314, Name: Edb Oral Admin - 10 - Tangelo Gummy Pearl, Strain: Not Specified, Days: Not Specified, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Tangelo Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1 day
+(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000935408, Length: 12
+INFO:root:Found Item Details for package 5: Brand: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 5: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl
+INFO:root:Extracted Strain for package 5: Not Specified
+INFO:root:Extracted Days for package 5: 1
+INFO:root:Extracted Weight from Qty for package 5: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935408, Package ID: 1A4070300001069000001315, Name: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000935504, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Edb Oral Admin - 10 - Pomegranate Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 6: Edb Oral Admin - 10 - Pomegranate Gummy Pearl
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 1
+INFO:root:Extracted Weight from Qty for package 6: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935504, Package ID: 1A4070300001069000001316, Name: Edb Oral Admin - 10 - Pomegranate Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Pomegranate Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000962405, Length: 12
+INFO:root:Found Item Details for package 7: Brand: Edb Oral Admin - 10 - Blackberry Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 7: Edb Oral Admin - 10 - Blackberry Gummy Mega
+INFO:root:Extracted Strain for package 7: Not Specified
+INFO:root:Extracted Days for package 7: 1
+INFO:root:Extracted Weight from Qty for package 7: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000962405, Package ID: 1A4070300001069000001317, Name: Edb Oral Admin - 10 - Blackberry Gummy Mega, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Blackberry Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000981307, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2
+Grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega
+INFO:root:Extracted Strain for package 8: Not Specified
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000981307, Package ID: 1A4070300001069000001318, Name: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2
+Grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000981307, Length: 12
+WARNING:root:Duplicate M Number skipped: M00000981307
+INFO:root:Extracted M Number: M00000981011, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Edb Oral Admin - 10 Sour Grape Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 10: Edb Oral Admin - 10 Sour Grape Gummy Mega
+INFO:root:Extracted Strain for package 10: Not Specified
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000981011, Package ID: 1A4070300001069000001320, Name: Edb Oral Admin - 10 Sour Grape Gummy Mega, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 Sour Grape Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Total packages processed: 10
+INFO:root:Total M Numbers extracted: 8
+INFO:werkzeug:127.0.0.1 - - [06/May/2025 08:33:06] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 2
+INFO:root:Found 10 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00000935506, Length: 12
+INFO:root:Found Item Details for package 2: Brand: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 2: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl
+INFO:root:Extracted Strain for package 2: Not Specified
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight from Qty for package 2: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935506, Package ID: 1A4070300001069000001312, Name: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Blackberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000941608, Length: 12
+INFO:root:Found Item Details for package 3: Brand: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl | THC: 0.28% | THC: 25 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 3: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl
+INFO:root:Extracted Strain for package 3: Not Specified
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight from Qty for package 3: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000941608, Package ID: 1A4070300001069000001313, Name: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 2.5 - Tart Cherry Gummy Pearl | THC: 0.28% | THC: 25 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000935305, Length: 12
+INFO:root:Found Item Details for package 4: Brand: Edb Oral Admin - 10 - Tangelo Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1 day
+(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 4: Edb Oral Admin - 10 - Tangelo Gummy Pearl
+INFO:root:Extracted Strain for package 4: Not Specified
+WARNING:root:Days not found for package 4 in Item Details: Brand: Edb Oral Admin - 10 - Tangelo Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1 day
+(s) | Qty: 110 mg
+INFO:root:Extracted Weight from Qty for package 4: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935305, Package ID: 1A4070300001069000001314, Name: Edb Oral Admin - 10 - Tangelo Gummy Pearl, Strain: Not Specified, Days: Not Specified, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Tangelo Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1 day
+(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000935408, Length: 12
+INFO:root:Found Item Details for package 5: Brand: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 5: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl
+INFO:root:Extracted Strain for package 5: Not Specified
+INFO:root:Extracted Days for package 5: 1
+INFO:root:Extracted Weight from Qty for package 5: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935408, Package ID: 1A4070300001069000001315, Name: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Blueberry Lemonade Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000935504, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Edb Oral Admin - 10 - Pomegranate Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 6: Edb Oral Admin - 10 - Pomegranate Gummy Pearl
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 1
+INFO:root:Extracted Weight from Qty for package 6: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000935504, Package ID: 1A4070300001069000001316, Name: Edb Oral Admin - 10 - Pomegranate Gummy Pearl, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Pomegranate Gummy Pearl | THC: 0.3% | THC: 100 mg | Wgt: 35 g | Serving: 1 Pearl 3.5g | Supply: 1
+day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000962405, Length: 12
+INFO:root:Found Item Details for package 7: Brand: Edb Oral Admin - 10 - Blackberry Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 7: Edb Oral Admin - 10 - Blackberry Gummy Mega
+INFO:root:Extracted Strain for package 7: Not Specified
+INFO:root:Extracted Days for package 7: 1
+INFO:root:Extracted Weight from Qty for package 7: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000962405, Package ID: 1A4070300001069000001317, Name: Edb Oral Admin - 10 - Blackberry Gummy Mega, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Blackberry Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000981307, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2
+Grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega
+INFO:root:Extracted Strain for package 8: Not Specified
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000981307, Package ID: 1A4070300001069000001318, Name: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 - Strawberry Lemonade Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2
+Grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000981307, Length: 12
+WARNING:root:Duplicate M Number skipped: M00000981307
+INFO:root:Extracted M Number: M00000981011, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Edb Oral Admin - 10 Sour Grape Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 10: Edb Oral Admin - 10 Sour Grape Gummy Mega
+INFO:root:Extracted Strain for package 10: Not Specified
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000981011, Package ID: 1A4070300001069000001320, Name: Edb Oral Admin - 10 Sour Grape Gummy Mega, Strain: Not Specified, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 10 Sour Grape Gummy Mega | THC: 0.5% | THC: 100 mg | Wgt: 20 g | Serving: 1 Piece 2 Grams | Supply:
+1 day(s) | Qty: 110 mg
+INFO:root:Total packages processed: 10
+INFO:root:Total M Numbers extracted: 8
+INFO:werkzeug:127.0.0.1 - - [06/May/2025 08:33:46] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:root:Found package table header on page 1
+INFO:root:Found 18 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00001139104, Length: 12
+INFO:root:Found Item Details for package 2: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 2: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express
+INFO:root:Extracted Strain for package 2: Not Specified
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight from Qty for package 2: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001139104, Package ID: Unknown, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001149107, Length: 12
+INFO:root:Found Item Details for package 3: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 3: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough
+INFO:root:Extracted Strain for package 3: Not Specified
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight from Qty for package 3: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001149107, Package ID: Unknown, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001176716, Length: 12
+INFO:root:Found Item Details for package 4: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 4: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky
+INFO:root:Extracted Strain for package 4: Not Specified
+INFO:root:Extracted Days for package 4: 2
+INFO:root:Extracted Weight from Qty for package 4: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00001176716, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted M Number: M00000499806, Length: 12
+INFO:root:Found Item Details for package 5: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted Name for package 5: Lot Top Admin - 10.35 - Balm - 1:1
+INFO:root:Extracted Strain for package 5: Not Specified
+INFO:root:Extracted Days for package 5: 1
+INFO:root:Extracted Weight from Qty for package 5: 295 mg, Category: Unspecified
+INFO:root:Found M Number: M00000499806, Package ID: Unknown, Name: Lot Top Admin - 10.35 - Balm - 1:1, Strain: Not Specified, Days: 1, Weight: 295 mg, Category: Unspecified, Item Details: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted M Number: M00000812101, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 6: Oil or Sol Vap - 34.7 - RSO - Fresh Powder
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 1
+INFO:root:Extracted Weight from Qty for package 6: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000812101, Package ID: Unknown, Name: Oil or Sol Vap - 34.7 - RSO - Fresh Powder, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001185105, Length: 12
+INFO:root:Found Item Details for package 7: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted Name for package 7: B52 Bomber
+INFO:root:Extracted Strain for package 7: Sativa
+INFO:root:Extracted Days for package 7: 2
+INFO:root:Extracted Weight for package 7: 5.66 g, Category: Flower
+INFO:root:Found M Number: M00001185105, Package ID: Unknown, Name: B52 Bomber, Strain: Sativa, Days: 2, Weight: 5.66 g, Category: Flower, Item Details: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted M Number: M00000496813, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 8: Indica
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000496813, Package ID: Unknown, Name: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000348801, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 9: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 9: Indica
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000348801, Package ID: Unknown, Name: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000446104, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 10: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica
+INFO:root:Extracted Strain for package 10: Indica
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000446104, Package ID: Unknown, Name: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00001172833, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO
+INFO:root:Extracted Strain for package 12: Indica
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172833, Package ID: Unknown, Name: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001172519, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO
+INFO:root:Extracted Strain for package 14: Sativa
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172519, Package ID: Unknown, Name: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO, Strain: Sativa, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00000912504, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 16: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 2
+INFO:root:Extracted Weight from Qty for package 16: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912504, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000912607, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 18: Oil or Sol Vap - 10.51 - Vape - Blue Raz
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 2
+INFO:root:Extracted Weight from Qty for package 18: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912607, Package ID: Unknown, Name: Oil or Sol Vap - 10.51 - Vape - Blue Raz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Total packages processed: 18
+INFO:root:Total M Numbers extracted: 13
+INFO:werkzeug:127.0.0.1 - - [06/May/2025 08:34:23] "POST /api/scan-pdf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/morganhondros/Documents/GitHub/MorgoExcel/backend/BuildComponent/MNumber.py', reloading
+INFO:werkzeug: * Detected change in '/Users/morganhondros/Documents/GitHub/MorgoExcel/backend/BuildComponent/PDFBuild.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-723-325
+INFO:werkzeug: * Detected change in '/Users/morganhondros/Documents/GitHub/MorgoExcel/backend/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-723-325
+INFO:werkzeug: * Detected change in '/Users/morganhondros/Documents/GitHub/MorgoExcel/backend/BuildComponent/MNumber.py', reloading
+INFO:werkzeug: * Detected change in '/Users/morganhondros/Documents/GitHub/MorgoExcel/backend/BuildComponent/MNumber.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-723-325
+INFO:root:Found package table header on page 1
+INFO:root:Found 18 package blocks
+WARNING:root:No M Number found for package 1
+INFO:root:Extracted M Number: M00001139104, Length: 12
+INFO:root:Found Item Details for package 2: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 2: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express
+INFO:root:Extracted Strain for package 2: Not Specified
+INFO:root:Extracted Days for package 2: 1
+INFO:root:Extracted Weight from Qty for package 2: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001139104, Package ID: 1A40703000020D1000004795, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Pineapple Express | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001149107, Length: 12
+INFO:root:Found Item Details for package 3: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 3: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough
+INFO:root:Extracted Strain for package 3: Not Specified
+INFO:root:Extracted Days for package 3: 1
+INFO:root:Extracted Weight from Qty for package 3: 590 mg, Category: Vape
+INFO:root:Found M Number: M00001149107, Package ID: 1A40703000020D1000004796, Name: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.5 - The Essence Disposable Cartridge - Strawberry Cough | THC: 70% | THC: 210 mg | Wgt: 0.3 g |
+Serving: 1 ten second inhale = 15mg | Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001176716, Length: 12
+INFO:root:Found Item Details for package 4: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 4: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky
+INFO:root:Extracted Strain for package 4: Not Specified
+INFO:root:Extracted Days for package 4: 2
+INFO:root:Extracted Weight from Qty for package 4: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00001176716, Package ID: 1A40703000020D1000004797, Name: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - The Essence Cartridge - Blue Sky | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second
+inhale = 15mg | Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted M Number: M00000499806, Length: 12
+INFO:root:Found Item Details for package 5: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted Name for package 5: Lot Top Admin - 10.35 - Balm - 1:1
+INFO:root:Extracted Strain for package 5: Not Specified
+INFO:root:Extracted Days for package 5: 1
+INFO:root:Extracted Weight from Qty for package 5: 295 mg, Category: Unspecified
+INFO:root:Found M Number: M00000499806, Package ID: 1A40703000020D1000004798, Name: Lot Top Admin - 10.35 - Balm - 1:1, Strain: Not Specified, Days: 1, Weight: 295 mg, Category: Unspecified, Item Details: Brand: Lot Top Admin - 10.35 - Balm - 1:1 | THC: 0.52% | THC: 295 mg | Vol: 57 ml | Wgt: 57 g | Serving: 2 penny size portions = 2
+grams | Supply: 1 day(s) | Qty: 295 mg
+INFO:root:Extracted M Number: M00000812101, Length: 12
+INFO:root:Found Item Details for package 6: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted Name for package 6: Oil or Sol Vap - 34.7 - RSO - Fresh Powder
+INFO:root:Extracted Strain for package 6: Not Specified
+INFO:root:Extracted Days for package 6: 1
+INFO:root:Extracted Weight from Qty for package 6: 590 mg, Category: Vape
+INFO:root:Found M Number: M00000812101, Package ID: 1A40703000020D1000004799, Name: Oil or Sol Vap - 34.7 - RSO - Fresh Powder, Strain: Not Specified, Days: 1, Weight: 590 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 34.7 - RSO - Fresh Powder | THC: 70% | THC: 590 mg | Wgt: 0.84 g | Serving: 1 full dropper = 1.0mL |
+Supply: 1 day(s) | Qty: 590 mg
+INFO:root:Extracted M Number: M00001185105, Length: 12
+INFO:root:Found Item Details for package 7: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted Name for package 7: B52 Bomber
+INFO:root:Extracted Strain for package 7: Sativa
+INFO:root:Extracted Days for package 7: 2
+INFO:root:Extracted Weight for package 7: 5.66 g, Category: Flower
+INFO:root:Found M Number: M00001185105, Package ID: 1A40703000020D1000004800, Name: B52 Bomber, Strain: Sativa, Days: 2, Weight: 5.66 g, Category: Flower, Item Details: Strain: B52 Bomber | Brand: Plant Mat - Sativa - 24 - B52 Bomber - Savvy - Smalls | THC: 24% | Wgt: 5.66 g | Supply: 2 day(s)
+INFO:root:Extracted M Number: M00000496813, Length: 12
+INFO:root:Found Item Details for package 8: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 8: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 8: Indica
+INFO:root:Extracted Days for package 8: 1
+INFO:root:Extracted Weight from Qty for package 8: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000496813, Package ID: 1A40703000020D1000004801, Name: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Mandarin 1:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1
+gummy = 3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000348801, Length: 12
+INFO:root:Found Item Details for package 9: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 9: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica
+INFO:root:Extracted Strain for package 9: Indica
+INFO:root:Extracted Days for package 9: 1
+INFO:root:Extracted Weight from Qty for package 9: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000348801, Package ID: 1A40703000020D1000004802, Name: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Gummy - Sour Strawberry Peach 2:1 CBD:THC Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g |
+Serving: 1 gummy = 3.4 grams | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted M Number: M00000446104, Length: 12
+INFO:root:Found Item Details for package 10: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 10: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica
+INFO:root:Extracted Strain for package 10: Indica
+INFO:root:Extracted Days for package 10: 1
+INFO:root:Extracted Weight from Qty for package 10: 110 mg, Category: Edible
+INFO:root:Found M Number: M00000446104, Package ID: 1A40703000020D1000004803, Name: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - RSO Gummy - Concord Grape Indica | THC: 0.32% | THC: 110 mg | Wgt: 34 g | Serving: 1 gummy =
+3.4g | Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 11
+INFO:root:Extracted M Number: M00001172833, Length: 12
+INFO:root:Found Item Details for package 12: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 12: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO
+INFO:root:Extracted Strain for package 12: Indica
+INFO:root:Extracted Days for package 12: 1
+INFO:root:Extracted Weight from Qty for package 12: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172833, Package ID: 1A40703000020D1000004804, Name: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO, Strain: Indica, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Indica - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 13
+INFO:root:Extracted M Number: M00001172519, Length: 12
+INFO:root:Found Item Details for package 14: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+INFO:root:Extracted Name for package 14: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO
+INFO:root:Extracted Strain for package 14: Sativa
+INFO:root:Extracted Days for package 14: 1
+INFO:root:Extracted Weight from Qty for package 14: 110 mg, Category: Edible
+INFO:root:Found M Number: M00001172519, Package ID: 1A40703000020D1000004805, Name: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO, Strain: Sativa, Days: 1, Weight: 110 mg, Category: Edible, Item Details: Brand: Edb Oral Admin - 11 - Milk Chocolate Sativa - RSO | THC: 0.2% | THC: 110 mg | Wgt: 56 g | Serving: 1 chocolate = 5.6g |
+Supply: 1 day(s) | Qty: 110 mg
+WARNING:root:No M Number found for package 15
+INFO:root:Extracted M Number: M00000912504, Length: 12
+INFO:root:Found Item Details for package 16: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 16: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz
+INFO:root:Extracted Strain for package 16: Not Specified
+INFO:root:Extracted Days for package 16: 2
+INFO:root:Extracted Weight from Qty for package 16: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912504, Package ID: 1A40703000020D1000004806, Name: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Banana Sherbz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+WARNING:root:No M Number found for package 17
+INFO:root:Extracted M Number: M00000912607, Length: 12
+INFO:root:Found Item Details for package 18: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Extracted Name for package 18: Oil or Sol Vap - 10.51 - Vape - Blue Raz
+INFO:root:Extracted Strain for package 18: Not Specified
+INFO:root:Extracted Days for package 18: 2
+INFO:root:Extracted Weight from Qty for package 18: 1,180 mg, Category: Vape
+INFO:root:Found M Number: M00000912607, Package ID: 1A40703000020D1000004807, Name: Oil or Sol Vap - 10.51 - Vape - Blue Raz, Strain: Not Specified, Days: 2, Weight: 1,180 mg, Category: Vape, Item Details: Brand: Oil or Sol Vap - 10.51 - Vape - Blue Raz | THC: 70% | THC: 700 mg | Wgt: 1 g | Serving: 1 ten second inhale = 15mg |
+Supply: 2 day(s) | Qty: 1,180 mg
+INFO:root:Total packages processed: 18
+INFO:root:Total M Numbers extracted: 13
+INFO:werkzeug:127.0.0.1 - - [06/May/2025 08:43:09] "POST /api/scan-pdf HTTP/1.1" 200 -
