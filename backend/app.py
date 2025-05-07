@@ -57,27 +57,31 @@ def allowed_file(filename):
 # New endpoint for PDF scanning
 @app.route('/api/scan-pdf', methods=['POST'])
 def scan_pdf():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'}), 400
+    try:
+        if 'file' not in request.files:
+            return jsonify({'error': 'No file part'}), 400
 
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
+        file = request.files['file']
+        if file.filename == '':
+            return jsonify({'error': 'No selected file'}), 400
 
-    if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        file_path = os.path.join(app.config['BUILD_IN_FOLDER'], filename)
-        file.save(file_path)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file_path = os.path.join(app.config['BUILD_IN_FOLDER'], filename)
+            file.save(file_path)
 
-        try:
-            data = extract_data(file_path)
-            if "error" in data:
-                return jsonify({'error': data["error"]}), 500
-            return jsonify(data), 200
-        except Exception as e:
-            return jsonify({'error': str(e)}), 500
-    else:
-        return jsonify({'error': 'Invalid file type, only PDFs are allowed'}), 400
+            try:
+                data = extract_data(file_path)
+                if "error" in data:
+                    return jsonify({'error': data["error"]}), 500
+                return jsonify(data), 200
+            except Exception as e:
+                return jsonify({'error': str(e)}), 500
+        else:
+            return jsonify({'error': 'Invalid file type, only PDFs are allowed'}), 400
+    except Exception as e:
+        print(f"#ERROR# {e}")
+        return jsonify({"error": str(e)}), 500
 
 # Existing Routes
 @app.route('/send-email', methods=['POST'])
