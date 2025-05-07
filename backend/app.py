@@ -228,4 +228,4 @@ if __name__ == '__main__':
     os.makedirs(DUTCHIE_COMPLETE_FOLDER, exist_ok=True)
     os.makedirs(ORDER_COMPLETE_FOLDER, exist_ok=True)
 
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
