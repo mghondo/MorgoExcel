@@ -131,31 +131,33 @@ def extract_m_numbers(pdf_path):
                                 # Fall back to Qty:
                                 qty_match = re.search(r"Qty:\s*([^|]+)", item_details, re.IGNORECASE)
                                 weight = qty_match.group(1).strip() if qty_match else "Not Specified"
-                                # Check for Oil for Oral, Edb Oral, or Vap
+                                # Check for Oil for Oral, Topical, Edb Oral, or Vap
                                 if "oil for oral" in item_details_lower:
                                     category = "Tincture"
-                                else:
-                                    if "edb oral" in item_details_lower:
-                                        category = "Edible"
-                                    elif "vap " in item_details_lower:
-                                        category = "Vape"
-                                    else:
-                                        category = "Unspecified"
-                                logging.info(f"Extracted Weight from Qty for package {package_count}: {weight}, Category: {category}")
-                        else:
-                            # No Wgt:, try Qty:
-                            qty_match = re.search(r"Qty:\s*([^|]+)", item_details, re.IGNORECASE)
-                            weight = qty_match.group(1).strip() if qty_match else "Not Specified"
-                            # Check for Oil for Oral, Edb Oral, or Vap
-                            if "oil for oral" in item_details_lower:
-                                category = "Tincture"
-                            else:
-                                if "edb oral" in item_details_lower:
+                                elif "balm" in item_details_lower or "lotion" in item_details_lower or "cream" in item_details_lower or "topical" in item_details_lower or "gel" in item_details_lower:
+                                    category = "Topical"
+                                elif "edb oral" in item_details_lower:
                                     category = "Edible"
                                 elif "vap " in item_details_lower:
                                     category = "Vape"
                                 else:
                                     category = "Unspecified"
+                                logging.info(f"Extracted Weight from Qty for package {package_count}: {weight}, Category: {category}")
+                        else:
+                            # No Wgt:, try Qty:
+                            qty_match = re.search(r"Qty:\s*([^|]+)", item_details, re.IGNORECASE)
+                            weight = qty_match.group(1).strip() if qty_match else "Not Specified"
+                            # Check for Oil for Oral, Topical, Edb Oral, or Vap
+                            if "oil for oral" in item_details_lower:
+                                category = "Tincture"
+                            elif "balm" in item_details_lower or "lotion" in item_details_lower or "cream" in item_details_lower or "topical" in item_details_lower or "gel" in item_details_lower:
+                                category = "Topical"
+                            elif "edb oral" in item_details_lower:
+                                category = "Edible"
+                            elif "vap " in item_details_lower:
+                                category = "Vape"
+                            else:
+                                category = "Unspecified"
                             logging.info(f"Extracted Weight from Qty or not found for package {package_count}: {weight}, Category: {category}")
 
                     m_numbers.append({

@@ -5,66 +5,99 @@ from openpyxl.utils import get_column_letter
 from datetime import datetime
 
 def process_metric_file(input_file, output_file):
-    # Create a new workbook
-    wb = openpyxl.Workbook()
-    ws = wb.active
+    try:
+        # Verify input file exists
+        if not os.path.exists(input_file):
+            raise FileNotFoundError(f"Input file not found: {input_file}")
 
-    # Read the CSV file
-    with open(input_file, 'r', newline='') as csvfile:
-        csv_reader = csv.reader(csvfile)
-        for row in csv_reader:
-            ws.append(row)
+        # Create a new workbook
+        wb = openpyxl.Workbook()
+        ws = wb.active
 
-    # Move data from column S to T
-    for row in ws.iter_rows(min_row=1, max_row=ws.max_row, min_col=19, max_col=19):
-        for cell in row:
-            ws.cell(row=cell.row, column=20, value=cell.value)
+        # Read the CSV file
+        print(f"Reading CSV file: {input_file}")
+        with open(input_file, 'r', newline='', encoding='utf-8') as csvfile:
+            csv_reader = csv.reader(csvfile)
+            rows = list(csv_reader)  # Load all rows to verify structure
+            if not rows:
+                raise ValueError("CSV file is empty")
+            for row in rows:
+                ws.append(row)
 
-    # Delete columns S, P to K, and H to C
-    ws.delete_cols(19)  # Delete column S
-    ws.delete_cols(11, 6)  # Delete columns K to P
-    ws.delete_cols(3, 6)  # Delete columns C to H
+        # Verify worksheet has data
+        if ws.max_row < 1 or ws.max_column < 1:
+            raise ValueError("Worksheet is empty after loading CSV")
 
-    if ws['B1'].value == "Item":
-        ws['B1'].value = "Description"
-        ws['B1'].alignment = openpyxl.styles.Alignment(wrap_text=True)  # Enable text wrapping
+        # Move data from column S to T
+        print("Moving data from column S to T")
+        for row in ws.iter_rows(min_row=1, max_row=ws.max_row, min_col=19, max_col=19):
+            for cell in row:
+                ws.cell(row=cell.row, column=20, value=cell.value)
 
-    # Change the title of column C from "Quantity" to "METRIC\nQuantity"
-    if ws['C1'].value == "Quantity":
-        ws['C1'].value = "METRIC\nQuantity"
-        ws['C1'].alignment = openpyxl.styles.Alignment(wrap_text=True)  # Enable text wrapping
+        # Delete columns S, P to K, and H to C
+        print("Deleting columns S, P to K, and H to C")
+        ws.delete_cols(19)  # Delete column S
+        ws.delete_cols(11, 6)  # Delete columns K to P
+        ws.delete_cols(3, 6)  # Delete columns C to H
 
-    # Delete the last three columns (E, F, G)
-    ws.delete_cols(ws.max_column - 2, 3)
+        # Rename column B
+        if ws['B1'].value == "Item":
+            print("Renaming column B from 'Item' to 'Description'")
+            ws['B1'].value = "Description"
+            ws['B1'].alignment = openpyxl.styles.Alignment(wrap_text=True)
 
-    # Add new columns at the end
-    # new_titles = ['COUNT', 'Grams per', 'Dutchie Qty', 'Dutchie \n Location', 'Last 4 of \n pkg ID', 'Dutchie \n Product', 'Dutchie \n Vendor']
-    # for index, title in enumerate(new_titles, start=ws.max_column + 1):  
-    #     # Start from the next column after the last existing column
-    #     cell = ws.cell(row=1, column=index)
-    #     cell.value = title
-    #     cell.alignment = openpyxl.styles.Alignment(wrap_text=True)
+        # Rename column C
+        if ws['C1'].value == "Quantity":
+            print("Renaming column C from 'Quantity' to 'METRIC\\nQuantity'")
+            ws['C1'].value = "METRIC\nQuantity"
+            ws['C1'].alignment = openpyxl.styles.Alignment(wrap_text=True)
 
-    # Add page number in the middle footer
-    ws.oddFooter.center.text = "Page &[Page]"
+        # Delete the last three columns (E, F, G)
+        print("Deleting last three columns")
+        if ws.max_column >= 3:
+            ws.delete_cols(ws.max_column - 2, 3)
+        else:
+            print("Warning: Not enough columns to delete last three")
 
-    # Add current date in the middle header
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    ws.oddHeader.center.text = f"Metric {current_date}"
+        # Add page number in the middle footer
+        ws.oddFooter.center.text = "Page &[Page]"
 
-    # Save the workbook as XLSX
-    wb.save(output_file)
+        # Add current date in the middle header
+        current_date = datetime.now().strftime("%Y-%m-%d")
+        ws.oddHeader.center.text = f"Metric {current_date}"
+
+        # Ensure output directory exists
+        output_dir = os.path.dirname(output_file)
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+
+        # Save the workbook as XLSX
+        print(f"Saving output file: {output_file}")
+        wb.save(output_file)
+
+        # Verify output file was created
+        if not os.path.exists(output_file):
+            raise FileNotFoundError(f"Output file was not created: {output_file}")
+
+    except Exception as e:
+        print(f"Error in process_metric_file: {str(e)}")
+        raise
 
 def clear_output_directory(output_dir):
-    # Delete all files in the output directory except 'temp'
-    for filename in os.listdir(output_dir):
-        if filename != 'temp':
-            file_path = os.path.join(output_dir, filename)
-            try:
-                if os.path.isfile(file_path):
-                    os.unlink(file_path)
-            except Exception as e:
-                print(f"Failed to delete {file_path}. Reason: {e}")
+    try:
+        # Delete all files in the output directory except 'temp'
+        for filename in os.listdir(output_dir):
+            if filename != 'temp':
+                file_path = os.path.join(output_dir, filename)
+                try:
+                    if os.path.isfile(file_path):
+                        os.unlink(file_path)
+                        print(f"Deleted file: {file_path}")
+                except Exception as e:
+                    print(f"Failed to delete {file_path}. Reason: {e}")
+    except Exception as e:
+        print(f"Error in clear_output_directory: {str(e)}")
+        raise
 
 def main():
     input_dir = "METRIC-IN"
@@ -88,8 +121,11 @@ def main():
             input_path = os.path.join(input_dir, filename)
             output_filename = f'METRIC-{current_date}.xlsx'
             output_path = os.path.join(output_dir, output_filename)
-            process_metric_file(input_path, output_path)
-            print(f"Processed: {filename} -> {output_filename}")
+            try:
+                process_metric_file(input_path, output_path)
+                print(f"Processed: {filename} -> {output_filename}")
+            except Exception as e:
+                print(f"Failed to process {filename}: {str(e)}")
 
 if __name__ == "__main__":
     main()

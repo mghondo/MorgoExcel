@@ -111,13 +111,20 @@ def upload_morning_file():
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
 
+    if 'location' not in request.form:
+        return jsonify({'error': 'Location not specified'}), 400
+
+    location = request.form['location']
+    if location not in ['Marengo', 'Columbus']:
+        return jsonify({'error': 'Invalid location specified'}), 400
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file_path = os.path.join(app.config['MORNING_UPLOAD_FOLDER'], filename)
         file.save(file_path)
 
         try:
-            processed_filename = MorningRUN.process_morning_file(file_path)
+            processed_filename = MorningRUN.process_morning_file(file_path, location)
             return jsonify({'filename': processed_filename}), 200
         except Exception as e:
             return jsonify({'error': str(e)}), 500
@@ -168,21 +175,36 @@ def upload_metric_file():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         input_path = os.path.join(app.config['METRIC_UPLOAD_FOLDER'], filename)
+        print(f"Saving Metric file to: {input_path}")
         file.save(input_path)
 
         try:
             output_filename = f'METRIC-{filename[:-4]}.xlsx'
             output_path = os.path.join(app.config['METRIC_COMPLETE_FOLDER'], output_filename)
+            print(f"Processing Metric file: {input_path} -> {output_path}")
             process_metric_file(input_path, output_path)
+            if not os.path.exists(output_path):
+                raise FileNotFoundError(f"Output file not created: {output_path}")
+            print(f"Metric file processed successfully: {output_filename}")
             return jsonify({'filename': output_filename}), 200
         except Exception as e:
+            print(f"Error processing Metric file: {str(e)}")
             return jsonify({'error': str(e)}), 500
+    else:
+        error_msg = f"Invalid file type for Metric: {file.filename}. Allowed types: {ALLOWED_EXTENSIONS}"
+        print(error_msg)
+        return jsonify({'error': error_msg}), 400
 
 @app.route('/download/metric/<filename>', methods=['GET'])
 def download_metric_file(filename):
     try:
+        file_path = os.path.join(app.config['METRIC_COMPLETE_FOLDER'], filename)
+        print(f"Downloading Metric file: {file_path}")
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"File not found: {file_path}")
         return send_from_directory(app.config['METRIC_COMPLETE_FOLDER'], filename, as_attachment=True)
     except Exception as e:
+        print(f"Error downloading Metric file: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/upload/dutchie', methods=['POST'])

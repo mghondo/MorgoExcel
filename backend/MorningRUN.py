@@ -11,7 +11,7 @@ file_complete_folder = os.path.join(lib_folder, 'MORNINGCOMPLETE')
 os.makedirs(file_render_folder, exist_ok=True)
 os.makedirs(file_complete_folder, exist_ok=True)
 
-def process_morning_file(input_path):
+def process_morning_file(input_path, location=None):
     current_date = datetime.now().strftime("%m.%d.%Y")
     
     try:
@@ -62,7 +62,9 @@ def process_morning_file(input_path):
         new_sheet.cell(row=1, column=12, value="\u2713")
 
         new_sheet.oddHeader.left.text = "Discrepancies: _____________________________"
-        new_sheet.oddHeader.center.text = f"Morning Count {current_date}"
+        # Include location in the header
+        header_text = f"{location} Morning Count {current_date}" if location else f"Morning Count {current_date}"
+        new_sheet.oddHeader.center.text = header_text
         new_sheet.oddHeader.right.text = "Name + Badge: _____________________________"
         new_sheet.oddFooter.center.text = "&P"
 
@@ -84,13 +86,8 @@ def process_morning_file(input_path):
 
         new_sheet.print_gridlines = True
 
-        # Check the content of cell C2 after modifications
-        cell_c2_value = new_sheet['C2'].value
-        if isinstance(cell_c2_value, str) and cell_c2_value.lower().startswith('m'):
-            location_prefix = "Marengo"
-        else:
-            location_prefix = "Columbus"
-
+        # Use the provided location for the filename
+        location_prefix = location if location else "Temp"
         output_filename = f"{location_prefix}{current_date}.MorningCount.xlsx"
         output_path = os.path.join(file_complete_folder, output_filename)
         
@@ -107,5 +104,3 @@ def process_morning_file(input_path):
         print(f"Input file path: {input_path}")
         print(f"Current working directory: {os.getcwd()}")
         raise
-
-# Main execution and other functions remain unchanged
